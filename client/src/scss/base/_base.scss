@@ -15,6 +15,22 @@ body {
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
     letter-spacing: 1.25px;
-    background-color: slategrey;
-    color: white;
+    background: url("../images/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: $color-cyan;
+
+    &::after {
+        display: block;
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        background: 
+            linear-gradient(
+                to right, 
+                darken($color-background, 18%),
+                rgba(0,0,0,0) 500%
+            );
+    }
 }

@@ -1,0 +1,13 @@
+.map-container {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    height: 100vh;
+    width: 60vw;
+    background: url("../images/map-mod3.jpg");
+    background-position: right;
+    opacity: 0.2;
+    // overflow: hidden;
+    // -webkit-clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
+    clip-path: polygon(15rem 0, 100% 0, 100% 100%, 35rem 100%);
+}

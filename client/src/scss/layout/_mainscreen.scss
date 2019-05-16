@@ -1,0 +1,9 @@
+
+.mainscreen {
+    @include pos-absolute-center;
+    height: calc(100vh - 10rem);
+    width: calc(100vw - 5rem);
+    border: 1px solid $color-cyan;
+    border-radius: 5px;
+    background-color: rgba(150,150,150, 0.1%);
+}

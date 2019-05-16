@@ -5,7 +5,11 @@
 @import "./base/base";
 
 ///// LAYOUT /////
+@import "./layout/mainscreen";
+@import "./layout/navbar";
+@import "./layout/bottom-bar";
 
 ///// PAGES /////
 
 ///// COMPONENTS /////
+@import "./components/map";

@@ -1,0 +1,44 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    width: 100vw;
+    padding: 0 5rem;
+
+    &__left {
+        display: inline-block;
+    }
+
+    &__right {
+        display: inline-block;
+    }
+
+    &__name {
+        font-family: "Debra Light";
+        letter-spacing: 3px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding-right: 2rem;
+        background-color: transparent;
+        color: $color-cyan;
+        border: none;
+        font-family: "Debra Light";
+        font-size: 1.6rem;
+        text-decoration: none;
+        outline: none;
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            text-shadow: $color-cyan 0 0 7px;
+            color: lighten($color-cyan, 20%);
+        }
+    }
+}
