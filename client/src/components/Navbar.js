@@ -2,27 +2,34 @@ import React from "react";
 
 
 class Navbar extends React.Component {
+
+    handleClick = (selected) => {
+        if(this.props.screenloaded) {
+            this.props.setSelected(selected);
+            this.props.setTerminalFalse();
+        }
+    }
     
     render() {
-        const { selected, setSelected } = this.props;
+        const { selected } = this.props;
         return (
             <nav className="navbar">
                 <div className="navbar__left">
                     <button 
                         className="navbar__item"
-                        onClick={() => setSelected("about")}
+                        onClick={() => this.handleClick("about")}
                         style={ selected === "about"? styles.navItem : {}}
                     >About</button>
 
                     <button 
                         className="navbar__item"
-                        onClick={() => setSelected("work")}
+                        onClick={() => this.handleClick("work")}
                         style={ selected === "work"? styles.navItem : {}}
                     >Work</button>
 
                     <button 
                         className="navbar__item"
-                        onClick={() => setSelected("contact")}  
+                        onClick={() => this.handleClick("contact")}
                         style={ selected === "contact"? styles.navItem : {}}  
                     >Contact</button>
                 </div>

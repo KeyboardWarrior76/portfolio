@@ -11,7 +11,11 @@
 @import "./layout/bottom-bar";
 
 ///// PAGES /////
+@import "./pages/contact";
+@import "./pages/about";
+@import "./pages/work";
 
 ///// COMPONENTS /////
 @import "./components/map";
 @import "./components/terminal";
+@import "./components/screenchange";

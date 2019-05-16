@@ -8,13 +8,29 @@ import { Terminal } from "./terminal/Terminal";
 class MainScreen extends React.Component {
 
     renderScreen = () => {
+        const { loaded, toggleScreenLoaded } = this.props;
         switch(this.props.selected) {
             case("about"):
-                return <About />
+                return (
+                    <About 
+                        loaded={loaded} 
+                        toggleScreenLoaded={toggleScreenLoaded}
+                    />
+                )
             case("work"):
-                return <Work />
+                return (
+                    <Work 
+                        loaded={loaded} 
+                        toggleScreenLoaded={toggleScreenLoaded}
+                    />
+                )
             case("contact"):
-                return <Contact /> 
+                return (
+                    <Contact 
+                        loaded={loaded} 
+                        toggleScreenLoaded={toggleScreenLoaded} 
+                    /> 
+                )
             default:
                 return null;
         }

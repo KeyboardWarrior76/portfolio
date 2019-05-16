@@ -1,0 +1,30 @@
+.screenchange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid $color-cyan;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.5);
+    transition-duration: 500;
+    overflow: hidden;
+
+    &__initializing {
+        @include pos-absolute-translated;
+        top: 25%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        font-family: "Debra Light";
+        font-size: 5rem;
+        letter-spacing: 5px;
+    }
+}
+
+.light-cycle {
+    transform: scale(1.5);
+    position: absolute;
+    top: 50%;
+    left: -10%;
+}

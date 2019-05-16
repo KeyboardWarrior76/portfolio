@@ -15,11 +15,13 @@ body {
     font-size: 1.6rem;
     font-family: "Lato", sans-serif;
     letter-spacing: 1.25px;
-    background: url("../images/sky.jpg");
+    background-image: url("../images/sky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     color: $color-cyan;
+    z-index: -1000;
+    // backface-visibility: hidden;
 
     &::after {
         display: block;

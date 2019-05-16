@@ -46,11 +46,12 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   letter-spacing: 1.25px;
-  background: url("../images/sky.jpg");
+  background-image: url("../images/sky.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  color: #00ffff; }
+  color: #00ffff;
+  z-index: -1000; }
   body::after {
     display: block;
     content: "";
@@ -119,16 +120,98 @@ body {
     margin-left: 2.5rem;
     cursor: pointer; }
 
+.contact {
+  opacity: 0; }
+
+.contact__heading {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 20%;
+  left: 30%;
+  font-family: "Debra Light";
+  font-size: 4rem;
+  color: rgba(0, 255, 255, 0.7); }
+  .contact__heading::before {
+    position: relative;
+    right: 5rem;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #00ffff; }
+  .contact__heading::after {
+    position: relative;
+    left: 5rem;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #00ffff; }
+
+.about {
+  opacity: 0; }
+
+.work {
+  opacity: 0; }
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  80% {
+    transform: scale(0.2);
+    opacity: 1; }
+  100% {
+    transform: scale(1); } }
+
 .map-container {
   position: absolute;
   top: -5rem;
-  right: -5rem;
+  right: -2.5rem;
   height: 100vh;
   width: 60vw;
   background: url("../images/map-mod3.jpg");
-  background-position: right;
-  opacity: 0.2;
+  background-position: 90%;
+  opacity: 0.3;
+  overflow: hidden;
   clip-path: polygon(15rem 0, 100% 0, 100% 100%, 35rem 100%); }
+
+.map__i-live-here {
+  position: absolute;
+  top: 22vh;
+  right: 15rem;
+  width: 20rem;
+  height: 20rem;
+  border: 8px solid #00ffff;
+  border-radius: 100px;
+  transition: 0.25s;
+  animation: zoom-in 1s ease-out;
+  animation-fill-mode: backwards;
+  animation-delay: 2s;
+  z-index: 1000; }
+  .map__i-live-here::before {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: "";
+    width: 97%;
+    height: 97%;
+    border: 2px solid #78909C;
+    border-radius: 100px; }
+  .map__i-live-here::after {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: block;
+    content: "";
+    width: 85%;
+    height: 85%;
+    border: 4px solid #00ffff;
+    border-color: inherit;
+    border-radius: 100px; }
 
 .terminal {
   position: absolute;
@@ -182,3 +265,31 @@ body {
     font-size: 1.3rem;
     color: inherit;
     white-space: pre-wrap; }
+
+.screenchange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition-duration: 500;
+  overflow: hidden; }
+  .screenchange__initializing {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: "Debra Light";
+    font-size: 5rem;
+    letter-spacing: 5px; }
+
+.light-cycle {
+  transform: scale(1.5);
+  position: absolute;
+  top: 50%;
+  left: -10%; }

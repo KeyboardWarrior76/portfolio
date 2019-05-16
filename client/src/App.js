@@ -7,7 +7,14 @@ class App extends React.Component {
   state = {
     selected: "about",
     terminalToggled: false,
+    screenloaded: false,
   };
+
+  componentDidUpdate(prevProps, prevState) {
+    if( this.state.selected !== prevState.selected ) {
+      this.setState({ screenloaded: false });
+    }
+  }
 
   setSelected = (selected) => {
     this.setState({ selected });
@@ -17,18 +24,34 @@ class App extends React.Component {
     this.setState({ terminalToggled: !this.state.terminalToggled });
   }
 
+  setTerminalFalse = () => {
+    this.setState({ terminalToggled: false });
+  }
+
+  toggleScreenLoaded = () => {
+    this.setState({ screenloaded: !this.state.screenloaded });
+  }
+
+  toggleLoadCancel = () => {
+    this.setState({ loadCancelations: !this.state.loadCancelations });
+  }
+
   render() {
-    const { selected, terminalToggled } = this.state;
+    const { selected, terminalToggled, screenloaded, loadCancelations } = this.state;
 
     return (
       <div className="App">
         <Navbar 
           selected={selected} 
           setSelected={this.setSelected}
+          screenloaded={screenloaded} 
+          setTerminalFalse={this.setTerminalFalse}
         />
         <MainScreen  
           selected={selected} 
           terminalToggled={terminalToggled}
+          loaded={screenloaded}
+          toggleScreenLoaded={this.toggleScreenLoaded}
         />
         <BottomBar 
           selected={selected}
