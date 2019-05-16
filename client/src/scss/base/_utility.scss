@@ -1,0 +1,29 @@
+.u-high {
+    &:hover {
+        background-color: rgba(255,255,255, 0.5);
+        // color: $color-electric-green;
+        font-weight: bold;
+    }
+}
+
+.white {
+    color: $color-off-white;
+}
+.green {
+    color: $color-electric-green;
+}
+.cyan {
+    color: $color-cyan;
+}
+.orange {
+    color: $monokai-orange;
+}
+.yellow {
+    color: $monokai-yellow;
+}
+.red {
+    color: $monokai-red;
+}
+.purple {
+    color: $monokai-purple;
+}

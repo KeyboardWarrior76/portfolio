@@ -6,6 +6,31 @@
   font-family: "Debra Light";
   src: url("../fonts/DebraPW-Light.otf"); }
 
+.u-high:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold; }
+
+.white {
+  color: #CFD8DC; }
+
+.green {
+  color: #76FF03; }
+
+.cyan {
+  color: #00ffff; }
+
+.orange {
+  color: #FD971F; }
+
+.yellow {
+  color: #E6DB74; }
+
+.red {
+  color: #F92672; }
+
+.purple {
+  color: #AE81FF; }
+
 *,
 *::before,
 *::after {
@@ -89,6 +114,10 @@ body {
   padding: 0 2.5rem; }
   .bottom-bar__status {
     min-width: 25rem; }
+  .bottom-bar .terminal-toggle {
+    height: 4rem;
+    margin-left: 2.5rem;
+    cursor: pointer; }
 
 .map-container {
   position: absolute;
@@ -100,3 +129,56 @@ body {
   background-position: right;
   opacity: 0.2;
   clip-path: polygon(15rem 0, 100% 0, 100% 100%, 35rem 100%); }
+
+.terminal {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: calc(45% + 3rem);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top: 5px solid rgba(0, 255, 255, 0.8);
+  color: #00ffff;
+  cursor: text;
+  transition: 3sec; }
+  .terminal__input-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 12%;
+    border-top: 1px solid rgba(0, 255, 255, 0.8); }
+    .terminal__input-container .terminal__directory {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      width: 20%;
+      color: inherit;
+      font-size: 1.6rem;
+      padding-left: 15px;
+      cursor: text; }
+    .terminal__input-container .terminal__input {
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50%;
+      left: 140px;
+      height: 100%;
+      width: 80vw;
+      color: inherit;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      outline: none;
+      padding-left: 5px;
+      font-size: 1.6rem; }
+  .terminal__display {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(88%);
+    background-color: rgba(0, 0, 0, 0);
+    overflow: scroll;
+    padding: 0 0 0px 20px;
+    font-size: 1.3rem;
+    color: inherit;
+    white-space: pre-wrap; }

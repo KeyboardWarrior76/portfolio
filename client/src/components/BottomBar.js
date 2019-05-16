@@ -74,7 +74,12 @@ class BottomBar extends React.Component {
         return (
             <div className="bottom-bar">
                 <div className="bottom-bar__left">
-
+                    <img 
+                        src={require("../images/keyboard.svg")} 
+                        alt="keyboard icon that toggles terminal" 
+                        className="terminal-toggle"
+                        onClick={() => this.props.toggleTerminal()}
+                    />
                 </div>
                 <div className="bottom-bar__right">
                     <div className="bottom-bar__status">

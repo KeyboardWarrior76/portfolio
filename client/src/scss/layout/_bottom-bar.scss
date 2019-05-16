@@ -11,6 +11,11 @@
 
     &__status {
         min-width: 25rem;
-        // text-align: center;
+    }
+
+    .terminal-toggle {
+        height: 4rem;
+        margin-left: 2.5rem;
+        cursor: pointer;
     }
 }

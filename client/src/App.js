@@ -5,15 +5,20 @@ import { BottomBar } from "./components/BottomBar";
 
 class App extends React.Component {
   state = {
-    selected: "about"
+    selected: "about",
+    terminalToggled: false,
   };
 
   setSelected = (selected) => {
     this.setState({ selected });
   }
 
+  toggleTerminal = () => {
+    this.setState({ terminalToggled: !this.state.terminalToggled });
+  }
+
   render() {
-    const { selected } = this.state;
+    const { selected, terminalToggled } = this.state;
 
     return (
       <div className="App">
@@ -21,9 +26,13 @@ class App extends React.Component {
           selected={selected} 
           setSelected={this.setSelected}
         />
-        <MainScreen  selected={selected} />
+        <MainScreen  
+          selected={selected} 
+          terminalToggled={terminalToggled}
+        />
         <BottomBar 
           selected={selected}
+          toggleTerminal={this.toggleTerminal}
         />
       </div>
     );

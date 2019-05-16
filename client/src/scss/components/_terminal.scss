@@ -1,0 +1,66 @@
+.terminal {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: calc(45% + 3rem);
+    background-color: rgba(0,0,0,0.8);
+    border-top: 5px solid rgba($color-cyan, 0.8);
+    color: $color-cyan;
+    cursor: text;
+    transition: 3sec;
+
+    &__input-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 12%;
+        border-top: 1px solid rgba($color-cyan, 0.8);
+
+        .terminal__directory {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            width: 20%;
+            color: inherit;
+            font-size: 1.6rem;
+            padding-left: 15px;
+            cursor: text;
+        }
+
+        .terminal__input {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 140px;
+            height: 100%;
+            width: 80vw;
+            color: inherit;
+            background-color: rgba(0,0,0,0);
+            border: none;
+            outline: none;
+            padding-left: 5px;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__display {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(88%);
+        background-color: rgba(0,0,0,0);
+        overflow: scroll;
+        padding: 0 0 0px 20px;
+        font-size: 1.3rem;
+        color: inherit;
+        white-space: pre-wrap;
+
+    }
+}
+
+// .terminal-toggle-up {
+//     transform: translateY(0);
+// }

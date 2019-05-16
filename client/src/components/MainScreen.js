@@ -2,6 +2,7 @@ import React from "react";
 import { About } from "./About";
 import { Contact } from "./Contact";
 import { Work } from "./Work";
+import { Terminal } from "./terminal/Terminal";
 
 
 class MainScreen extends React.Component {
@@ -22,7 +23,8 @@ class MainScreen extends React.Component {
     render() {
         return(
             <div className="mainscreen">
-                 { this.renderScreen() }
+                <Terminal terminalToggled={this.props.terminalToggled} />
+                { this.renderScreen() }
             </div>
         )
     }
