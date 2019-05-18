@@ -35,7 +35,7 @@ class Navbar extends React.Component {
                 </div>
     
                 <div className="navbar__right">
-                    <h2 className="navbar__name" >NICHOLAS RISTAGNO</h2>
+                    <h2 className="navbar__name" >{ "<Nicholas Ristagno>" }</h2>
                 </div>
             </nav>
         )
