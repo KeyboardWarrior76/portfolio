@@ -34,7 +34,38 @@ class About extends React.Component {
                         </p>
                     </div>
                     <div className="skills">
-                    
+                        <div className="skills__section">
+                            <h2 className="skills__header">Backend</h2>
+                            <ul>
+                                <li>Ruby, Ruby on Rails</li>
+                                <li>Node.js, Express</li>
+                                <li>Postgresql, Active Record</li>
+                                <li>MongoDB, Mongoose</li>
+                                <li>Rest APIs</li>
+                            </ul>
+                        </div>
+
+                        <div className="skills__section" style={{marginLeft: "35%"}} >
+                            <h2 className="skills__header">Frontend</h2>
+                            <ul>
+                                <li>Javascript, React</li>
+                                <li>SASS & CSS3</li>
+                                <li>Anime.js</li>
+                                <li>Styled Components</li>
+                                <li>Templating Engines</li>
+                            </ul>
+                        </div>
+
+                        <div className="skills__section">
+                            <h2 className="skills__header">Skills</h2>
+                            <ul>
+                                <li>Agile, Scrum, & Kanban</li>
+                                <li>Git & Github</li>
+                                <li>Netlify</li>
+                                <li>Heroku</li>
+                                <li>Cloudinary</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <ScreenChange 
