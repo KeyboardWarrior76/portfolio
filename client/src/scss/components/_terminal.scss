@@ -4,11 +4,12 @@
     right: 0;
     width: 100%;
     height: calc(45% + 3rem);
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     border-top: 5px solid rgba($color-cyan, 0.8);
     color: $color-cyan;
     cursor: text;
     transition: 3sec;
+    z-index: 10000;
 
     &__input-container {
         position: absolute;
@@ -51,7 +52,6 @@
         left: 0;
         width: 100%;
         height: calc(88%);
-        background-color: rgba(0,0,0,0);
         overflow: scroll;
         padding: 0 0 0px 20px;
         font-size: 1.3rem;
@@ -60,7 +60,3 @@
 
     }
 }
-
-// .terminal-toggle-up {
-//     transform: translateY(0);
-// }

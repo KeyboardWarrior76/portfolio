@@ -257,11 +257,12 @@ body {
   right: 0;
   width: 100%;
   height: calc(45% + 3rem);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   border-top: 5px solid rgba(0, 255, 255, 0.8);
   color: #00ffff;
   cursor: text;
-  transition: 3sec; }
+  transition: 3sec;
+  z-index: 10000; }
   .terminal__input-container {
     position: absolute;
     bottom: 0;
@@ -297,7 +298,6 @@ body {
     left: 0;
     width: 100%;
     height: calc(88%);
-    background-color: rgba(0, 0, 0, 0);
     overflow: scroll;
     padding: 0 0 0px 20px;
     font-size: 1.3rem;
