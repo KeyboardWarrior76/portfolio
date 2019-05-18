@@ -45,7 +45,6 @@ class App extends React.Component {
           selected={selected} 
           setSelected={this.setSelected}
           screenloaded={screenloaded} 
-          setTerminalFalse={this.setTerminalFalse}
         />
         <MainScreen  
           selected={selected} 

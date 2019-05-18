@@ -6,7 +6,6 @@ class Navbar extends React.Component {
     handleClick = (selected) => {
         if(this.props.screenloaded) {
             this.props.setSelected(selected);
-            this.props.setTerminalFalse();
         }
     }
     
