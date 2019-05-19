@@ -12,7 +12,7 @@ class ScreenChange extends React.Component {
         anime.timeline({ duration: 1500})
         .add({
             targets: this.cycleRef.current,
-            left: "100%",
+            left: "0",
             duration: 1250,
             easing: "linear",
         })
@@ -20,7 +20,7 @@ class ScreenChange extends React.Component {
             targets: this.changeRef.current,
             opacity: 0,
             duration: 250,
-            easing: "linear",
+            easing: "easeInBack",
         })
         .finished.then(() => {
             this.props.toggleScreenLoaded();
@@ -35,12 +35,13 @@ class ScreenChange extends React.Component {
                 style={this.props.loaded? {display: "none"} : {display: "block"}}
             >
                 <h2 className="screenchange__initializing" >-_-_ Initializing _-_-</h2>
-                <img 
-                    className="light-cycle"
-                    src={require("../images/light-cycle.png")} 
-                    alt="light cycle"
-                    ref={this.cycleRef} 
-                />
+                <div className="light-cycle__container" ref={this.cycleRef} >
+                    <img 
+                        className="light-cycle"
+                        src={require("../images/light-cycle.png")} 
+                        alt="light cycle"
+                    />
+                </div>
             </div>
         )
     }

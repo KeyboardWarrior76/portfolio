@@ -190,6 +190,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: left;
   width: calc(100% / 3 * 2);
   height: 100%;
@@ -351,8 +352,13 @@ body {
     font-size: 5rem;
     letter-spacing: 5px; }
 
-.light-cycle {
-  transform: scale(1.5);
+.light-cycle__container {
   position: absolute;
   top: 50%;
-  left: -10%; }
+  left: -120%;
+  width: 110%;
+  padding-bottom: 7.5px;
+  text-align: right; }
+
+.light-cycle {
+  transform: scale(1.5); }

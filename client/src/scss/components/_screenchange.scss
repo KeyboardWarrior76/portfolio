@@ -22,9 +22,17 @@
     }
 }
 
-.light-cycle {
-    transform: scale(1.5);
+
+.light-cycle__container {
     position: absolute;
     top: 50%;
-    left: -10%;
+    left: -120%;
+    width: 110%;
+    padding-bottom: 7.5px;
+    text-align: right;
+    // border-bottom: 10px groove $color-cyan;
+}
+
+.light-cycle {
+    transform: scale(1.5);
 }
