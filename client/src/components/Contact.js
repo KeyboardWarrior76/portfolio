@@ -1,6 +1,7 @@
 import React from "react";
-import { ScreenChange } from "./ScreenChange";
 import anime from "animejs";
+import { ScreenChange } from "./ScreenChange";
+import { ContactForm } from "./ContactForm";
 
 
 class Contact extends React.Component {
@@ -26,9 +27,9 @@ class Contact extends React.Component {
                     ref={this.contactRef}
                     // style={this.props.loaded? {} : {opacity: "0"}}
                 >
-                    <h2 className="contact__heading">
-                        Send Messsage
-                    </h2>
+                    <div className="contact-form__container">
+                        <ContactForm />
+                    </div>
                     
                     <div className="map__i-live-here">
                     </div>
