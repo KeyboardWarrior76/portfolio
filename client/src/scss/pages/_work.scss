@@ -1,4 +1,166 @@
 
 .work {
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.work-pane-container {
+    height: 100%;
+    width: 40%;
+    min-width: 40rem;
+    background-color: rgba(0,0,0,0.3);
+    border-left: 2px dotted $color-cyan;
+
+    .select-project-prompt {
+        width: 80%;
+        padding: 2rem;
+        margin: 30% auto;
+        text-align: center;
+        font-family: "Debra Light";
+        font-size: 3rem;
+        border: 1px dotted $color-cyan;
+        border-top: 1px solid $color-cyan;
+        border-bottom: 1px solid $color-cyan;
+        border-radius: 5px;
+        background-color: rgba($color-cyan, 0.05);
+    }
+}
+
+
+.work-pane {
+    &__video-container {
+        overflow: hidden;
+    }
+
+    &__video {
+        position: relative;
+        bottom: -3px;
+        width: 100%;
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5rem;
+        margin-bottom: 3rem;
+        background-color: rgba($color-cyan, 0.1);
+        border-top: 1px dotted $color-cyan;
+        border-bottom: 1px dotted $color-cyan;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    &__github {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.25rem 1rem;
+        margin-right: 3rem;
+        font-size: 1.8rem;
+        color: $color-electric-green;
+        background-color: rgba($color-electric-green, 0.1);
+        border: 1px dotted $color-electric-green;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: rgba($color-electric-green, 0.2);
+        }
+    }
+
+    &__live {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.25rem 1rem;
+        font-size: 1.8rem;
+        color: $monokai-purple;
+        background-color: rgba($monokai-purple, 0.1);
+        border: 1px dotted $monokai-purple;
+        border-radius: 20px;
+
+        &:hover {
+            background-color: rgba($monokai-purple, 0.2);
+        }
+    }
+
+    &__description {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        padding: 0 5rem;
+    }
+}
+
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+    min-width: 40rem;
+    padding-top: 2.5rem;
+
+    .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: rgba($color-cyan,0.2);
+        height: 18rem;
+        width: 18rem;
+        margin: 5.5rem;
+        border: 2px solid $color-cyan;
+        border-radius: 100px;
+        overflow: hidden;
+        transition-duration: 0.2s;
+        cursor: pointer;
+        
+        &__image-container {
+            position: relative;
+            height: 85%;
+            width: 85%;
+            border: 1px dotted $color-cyan;
+            border-radius: 100px;
+            overflow: hidden;
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        &__video-thumbnail {
+            @include pos-absolute-center;
+            height: 200%;
+            width: 200%;
+            border-radius: 100px;
+        }
+
+        &:hover {
+            transform: scale(1.4);
+            background-color: rgba(0,0,0,0.3);
+            border: 1px dotted $monokai-purple;
+        }
+        
+        &:hover > div {
+            border-color: $monokai-purple;
+            border: 1px solid $monokai-purple;
+        }
+        
+        &__selected {
+            transform: scale(1.4);
+            background-color: rgba(0,0,0,0.3);
+            border: 1px dotted $color-electric-green;
+        }
+        
+        &__selected div {
+            border: 1px solid $color-electric-green;
+        }
+    }
 }
