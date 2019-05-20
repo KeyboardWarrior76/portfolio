@@ -129,9 +129,9 @@ body {
 .contact-form__heading {
   display: block;
   position: relative;
-  margin: 25% 0 5rem 0;
+  margin: 20% 0 6rem 0;
   font-family: "Debra Light";
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: rgba(0, 255, 255, 0.7); }
   .contact-form__heading::before {
     position: absolute;
@@ -155,7 +155,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 40rem;
+  width: 45rem;
   border-top: 1px solid #00ffff;
   border-bottom: 1px solid #00ffff;
   border-left: 1px dotted #00ffff;
@@ -173,7 +173,7 @@ body {
     align-items: center; }
   .contact-form input {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     padding-left: 1.5rem;
     color: #00ffff;
     background-color: rgba(0, 0, 0, 0.2);
@@ -186,7 +186,7 @@ body {
       color: #00ffff; }
   .contact-form textarea {
     width: 100%;
-    height: 15rem;
+    height: 20rem;
     padding: 1.5rem;
     color: #00ffff;
     background-color: rgba(0, 0, 0, 0.2);
@@ -199,7 +199,7 @@ body {
       color: #00ffff; }
   .contact-form button {
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     background-color: rgba(0, 255, 255, 0.2);
     color: #00ffff;
     border: none;

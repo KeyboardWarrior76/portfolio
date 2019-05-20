@@ -8,9 +8,9 @@
 .contact-form__heading {
     display: block;
     position: relative;
-    margin: 25% 0 5rem 0;
+    margin: 20% 0 6rem 0;
     font-family: "Debra Light";
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: rgba($color-cyan, 0.7);
 
     &::before {
@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 40rem;
+    width: 45rem;
     border-top: 1px solid $color-cyan;
     border-bottom: 1px solid $color-cyan;
     border-left: 1px dotted $color-cyan;
@@ -59,7 +59,7 @@
 
     input {
         width: 100%;
-        height: 5rem;
+        height: 6rem;
         padding-left: 1.5rem;
         color: $color-cyan;
         background-color: rgba(0,0,0,0.2);
@@ -76,7 +76,7 @@
 
     textarea {
         width: 100%;
-        height: 15rem;
+        height: 20rem;
         padding: 1.5rem;
         color: $color-cyan;
         background-color: rgba(0,0,0,0.2);
@@ -93,7 +93,7 @@
 
     button {
         width: 100%;
-        height: 5rem;
+        height: 6rem;
         background-color: rgba($color-cyan, 0.2);
         color: $color-cyan;
         border: none;
