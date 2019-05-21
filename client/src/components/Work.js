@@ -10,21 +10,21 @@ class Work extends React.Component {
         currentProject: null,
         projects: [
         {
-            video: "test.mp4", 
+            video: "beakr.mp4", 
             title: "Beakr, LMS", 
             github: "https://github/3mpirical",
             live: "https://link-to-nowhere",
             description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
         },
         {
-            video: "test.mp4", 
+            video: "trollo.mp4", 
             title: "Trollo", 
             github: "https://github/3mpirical",
             live: "https://link-to-nowhere",
             description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
         },
         {
-            video: "test.mp4", 
+            video: "blackjack.mp4", 
             title: "BlackJack", 
             github: "https://github/3mpirical",
             live: "https://link-to-nowhere",
