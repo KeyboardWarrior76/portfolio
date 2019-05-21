@@ -30,7 +30,7 @@ class About extends React.Component {
                             {/* <p>If you're feeling adventurous, click the keyboard icon at the bottom and follow the directions in the terminal. If you like what you see, you can send me a message there too.</p> */}
                         </div>
                         <p className="about-me__terminal-disclaimer">
-                            * If you're feeling adventurous, click the keyboard icon at the bottom and follow the directions in the terminal.
+                            If you're feeling adventurous, click the keyboard icon at the bottom and follow the directions in the terminal.
                         </p>
                     </div>
                     <div className="skills">

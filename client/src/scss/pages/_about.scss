@@ -40,7 +40,28 @@
         bottom: 2.5rem;
         left: 2.5rem;
         width: 90%;
+        padding: 0.5rem 1.5rem;
+        border-top: 1px solid $color-cyan;
+        border-bottom: 1px solid $color-cyan;
+        border-left: 1px dotted $color-cyan;
+        border-right: 1px dotted $color-cyan;
+        border-radius: 5px;
+        background-color: rgba($color-cyan, 0.05);
         line-height: 2.5rem;
+
+        &::before {
+            @include pos-absolute-center;
+            content: "";
+            position: absolute;
+            display: block;
+            height: calc(100% + 2rem);
+            width: calc(100% + 1rem);
+            border-top: 1px solid $color-cyan;
+            border-bottom: 1px solid $color-cyan;
+            border-left: 1px dotted $color-cyan;
+            border-right: 1px dotted $color-cyan;
+            border-radius: 5px;
+        }
     }
 }
 

@@ -277,7 +277,29 @@ body {
     bottom: 2.5rem;
     left: 2.5rem;
     width: 90%;
+    padding: 0.5rem 1.5rem;
+    border-top: 1px solid #00ffff;
+    border-bottom: 1px solid #00ffff;
+    border-left: 1px dotted #00ffff;
+    border-right: 1px dotted #00ffff;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.05);
     line-height: 2.5rem; }
+    .about-me__terminal-disclaimer::before {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      content: "";
+      position: absolute;
+      display: block;
+      height: calc(100% + 2rem);
+      width: calc(100% + 1rem);
+      border-top: 1px solid #00ffff;
+      border-bottom: 1px solid #00ffff;
+      border-left: 1px dotted #00ffff;
+      border-right: 1px dotted #00ffff;
+      border-radius: 5px; }
 
 .skills {
   position: relative;
