@@ -44,13 +44,13 @@ class ContactForm extends React.Component{
                         required
                     ></textarea>
                     <button>Submit</button>
+                    { this.state.messageSent
+                    ? (
+                        <div className="sent-prompt"> <h3>Message Sent</h3></div>
+                    )
+                    : null
+                    }
                 </form>
-                { this.state.messageSent
-                ? (
-                    <div className="sent-prompt"> <h3>Message Sent</h3></div>
-                )
-                : null
-                }
             </>
         )
     }

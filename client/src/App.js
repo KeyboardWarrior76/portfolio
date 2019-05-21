@@ -55,6 +55,7 @@ class App extends React.Component {
         <BottomBar 
           selected={selected}
           toggleTerminal={this.toggleTerminal}
+          terminalToggled={terminalToggled}
         />
       </div>
     );

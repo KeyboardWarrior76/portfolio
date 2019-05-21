@@ -71,15 +71,27 @@ class BottomBar extends React.Component {
     }
 
     render() {
+        const { terminalToggled, toggleTerminal } = this.props;
         return (
             <div className="bottom-bar">
                 <div className="bottom-bar__left">
-                    <img 
-                        src={require("../images/keyboard.svg")} 
-                        alt="keyboard icon that toggles terminal" 
-                        className="terminal-toggle"
-                        onClick={() => this.props.toggleTerminal()}
-                    />
+                    <div 
+                        className={
+                            terminalToggled
+                            ? "terminal-toggle terminal-active" 
+                            : "terminal-toggle" 
+                        } 
+                        onClick={() => toggleTerminal()} >
+                        <img 
+                            src={require("../images/keyboard.svg")} 
+                            alt="keyboard icon that toggles terminal" 
+                            className="terminal-image"
+                        />
+                        { terminalToggled
+                        ? <p >Deactivate Terminal</p>
+                        : <p>Activate Terminal</p>
+                        }
+                    </div>
                 </div>
                 <div className="bottom-bar__right">
                     <div className="bottom-bar__status">

@@ -9,13 +9,36 @@
     width: 100vw;
     padding: 0 2.5rem;
 
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
     &__status {
         min-width: 25rem;
     }
 
     .terminal-toggle {
-        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 23.5rem;
+        padding: 0 1rem;
+        border: 1px solid $color-cyan;
+        border-radius: 5px;
         margin-left: 2.5rem;
         cursor: pointer;
+        transition-duration: 0.2s;
+        
+        .terminal-image {
+            height: 3.5rem;
+            margin-right: 1.5rem;
+            
+        }
+    }
+    
+    .terminal-active {
+        background-color: rgba($color-cyan, 0.2);
     }
 }
