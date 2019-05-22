@@ -34,6 +34,20 @@ class Navbar extends React.Component {
                 </div>
     
                 <div className="navbar__right">
+                    <a href="https://linkedin.com/in/nicholas-ristagno" target="_blank" >
+                        <img 
+                            src={require("../images/linkedin.svg")}
+                            alt="linkedin" 
+                            className="navbar__right__link"
+                        />
+                    </a>
+                    <a href="https://github.com/3mpirical/" target="_blank" >
+                        <img 
+                            src={require("../images/github.svg")} 
+                            alt="github" 
+                            className="navbar__right__link"
+                        />
+                    </a>
                     <h2 className="navbar__name" >{ "<Nicholas Ristagno>" }</h2>
                 </div>
             </nav>

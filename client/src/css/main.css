@@ -83,10 +83,15 @@ body {
   .navbar__left {
     display: inline-block; }
   .navbar__right {
-    display: inline-block; }
-  .navbar__name {
-    font-family: "Debra Light";
-    letter-spacing: 3px; }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .navbar__right__link {
+      height: 2rem;
+      margin-right: 2rem; }
+    .navbar__right__name {
+      font-family: "Debra Light";
+      letter-spacing: 3px; }
   .navbar__item {
     display: inline-block;
     padding-right: 2rem;
@@ -133,6 +138,8 @@ body {
     .bottom-bar .terminal-toggle .terminal-image {
       height: 3.5rem;
       margin-right: 1.5rem; }
+    .bottom-bar .terminal-toggle:hover {
+      background-color: rgba(0, 255, 255, 0.4); }
   .bottom-bar .terminal-active {
     background-color: rgba(0, 255, 255, 0.2); }
 
@@ -248,6 +255,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
+  width: 100%;
   opacity: 0; }
 
 .about-me {
@@ -316,6 +324,7 @@ body {
     width: 30rem;
     font-size: 1.8rem;
     line-height: 3rem;
+    z-index: 1000;
     background-color: rgba(0, 0, 0, 0.3);
     border: 1px dotted #00ffff;
     border-radius: 5px;
@@ -330,6 +339,17 @@ body {
     border-bottom: 1px dotted #00ffff;
     font-size: 3rem;
     font-family: "Debra Light"; }
+
+.metoer {
+  position: absolute;
+  cursor: pointer; }
+
+.meteor-blast {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border-radius: 100px; }
 
 .work {
   opacity: 0;
@@ -436,6 +456,20 @@ body {
     overflow: hidden;
     transition-duration: 0.2s;
     cursor: pointer; }
+    .projects .project__title {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      max-width: 12rem;
+      color: #00ffff;
+      z-index: 1000;
+      font-weight: 900;
+      font-size: 2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      transition-duration: 0.2s; }
     .projects .project__image-container {
       position: relative;
       height: 85%;
@@ -459,6 +493,8 @@ body {
     .projects .project:hover > div {
       border-color: #AE81FF;
       border: 1px solid #AE81FF; }
+    .projects .project:hover > p {
+      opacity: 0; }
     .projects .project__selected {
       transform: scale(1.4);
       background-color: rgba(0, 0, 0, 0.3);

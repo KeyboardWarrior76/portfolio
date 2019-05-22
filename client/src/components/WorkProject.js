@@ -30,6 +30,10 @@ class WorkProject extends React.Component {
                 }
                 onClick={() => setCurrentProject(index)}
             >
+                {  currentProject === index
+                    ? null
+                    : <p className="project__title">{ project.title }</p>
+                }
                 <div 
                     className="project__image-container" 
                     onMouseEnter={this.onMouseEnter}

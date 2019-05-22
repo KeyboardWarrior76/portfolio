@@ -1,6 +1,7 @@
 import React from "react";
 import anime from "animejs";
 import { ScreenChange } from "./ScreenChange";
+import { Meteor } from "./Metoer";
 
 
 class About extends React.Component {
@@ -34,6 +35,56 @@ class About extends React.Component {
                         </p>
                     </div>
                     <div className="skills">
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 9 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 9 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 6 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 6 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 6 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 3 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 3 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 3 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 3 + 1)}rem`}
+                        />
+                        <Meteor 
+                            left={`${Math.floor(Math.random() * 90)}%`} 
+                            top={`${Math.floor(Math.random() * 90)}%`}  
+                            size={`${Math.round(Math.random() * 3 + 1)}rem`}
+                        />
                         <div className="skills__section">
                             <h2 className="skills__header">Backend</h2>
                             <ul>

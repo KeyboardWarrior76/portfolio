@@ -11,7 +11,7 @@ class Work extends React.Component {
         projects: [
         {
             video: "beakr.mp4", 
-            title: "Beakr, LMS", 
+            title: "Beakr", 
             github: "https://github/3mpirical",
             live: "https://link-to-nowhere",
             description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
@@ -24,6 +24,13 @@ class Work extends React.Component {
             description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
         },
         {
+            video: "monghoul.mp4", 
+            title: "Monghoul", 
+            github: "https://github/3mpirical",
+            live: "https://link-to-nowhere",
+            description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
+        },
+        {
             video: "blackjack.mp4", 
             title: "BlackJack", 
             github: "https://github/3mpirical",
@@ -31,21 +38,14 @@ class Work extends React.Component {
             description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
         },
         {
-            video: "test.mp4", 
-            title: "Departments Store", 
+            video: "commercify.mp4", 
+            title: "Commercify", 
             github: "https://github/3mpirical",
             live: "https://link-to-nowhere",
             description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
         },
         {
-            video: "test.mp4", 
-            title: "Monghoul", 
-            github: "https://github/3mpirical",
-            live: "https://link-to-nowhere",
-            description: "Tousled vape yr, bespoke banjo pickled quinoa activated charcoal cliche venmo DIY authentic fingerstache. Kickstarter gentrify messenger bag tumeric hot chicken poke twee snackwave banjo bespoke. Vaporware unicorn aesthetic snackwave meggings flannel four dollar toast hell of. Marfa offal lo-fi occupy unicorn selvage skateboard yuccie.",
-        },
-        {
-            video: "test.mp4", 
+            video: "social-lite.mp4", 
             title: "Social-Lite", 
             github: "https://github/3mpirical",
             live: "https://link-to-nowhere",

@@ -125,6 +125,19 @@
         transition-duration: 0.2s;
         cursor: pointer;
         
+        &__title {
+            @include pos-absolute-center;
+            max-width: 12rem;
+            color: $color-cyan;
+            z-index: 1000;
+            font-weight: 900;
+            font-size: 2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition-duration: 0.2s;
+        }
+        
         &__image-container {
             position: relative;
             height: 85%;
@@ -151,6 +164,10 @@
         &:hover > div {
             border-color: $monokai-purple;
             border: 1px solid $monokai-purple;
+        }
+
+        &:hover > p {
+            opacity: 0;
         }
         
         &__selected {
