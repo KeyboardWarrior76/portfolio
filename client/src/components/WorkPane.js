@@ -21,11 +21,16 @@ const WorkPane = ({ project }) => {
                         href={project.github} 
                         target="_blank" 
                     >Github</a>
-                    <a 
-                        className="work-pane__live" 
-                        href={project.live} 
-                        target="_blank" 
-                    >Live Site</a>
+                    { project.live
+                    ? (
+                        <a 
+                            className="work-pane__live" 
+                            href={project.live} 
+                            target="_blank" 
+                        >Live Site</a>
+                    )
+                    : null
+                    }
                 </div>
             </div>
             <p className="work-pane__description" > { project.description } </p>

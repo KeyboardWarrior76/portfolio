@@ -408,7 +408,6 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 0.25rem 1rem;
-  margin-right: 3rem;
   font-size: 1.8rem;
   color: #76FF03;
   background-color: rgba(118, 255, 3, 0.1);
@@ -421,6 +420,7 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 0.25rem 1rem;
+  margin-left: 3rem;
   font-size: 1.8rem;
   color: #AE81FF;
   background-color: rgba(174, 129, 255, 0.1);
