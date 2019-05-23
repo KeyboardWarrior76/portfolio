@@ -1,6 +1,7 @@
 import { terminalDisplay } from "../../Terminal";
 import { state } from "../../state";
 import { UTIL } from "../../terminalUtilities";
+import axios from "axios";
 
 ///// FUNCTIONS /////
 const sendMessage = (event) => {
@@ -36,6 +37,9 @@ const sendMessage = (event) => {
 
     } else { 
         if(event.value === "yes") {
+            axios.post("/api/send_message", { message: `\nName: ${state.userName? state.userName: "none"} \nEmail: ${state.userEmail? state.userEmail: "none"} \nMessage: ${state.userMessage? state.userMessage: "none"}`})
+            .then((res) => console.log("success"))
+            .catch((err) => console.log("failed to send message"));
             UTIL().createAppendP(
                 terminalDisplay,
                 "!!!!!  Message Sent  !!!!!",

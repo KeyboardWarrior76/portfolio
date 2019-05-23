@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 
 class ContactForm extends React.Component{
@@ -10,8 +11,10 @@ class ContactForm extends React.Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
+        axios.post("/api/send_message", { message: `\nName: ${this.state.name} \nEmail: ${this.state.email} \nMessage: ${this.state.message}`})
+        .then((res) => console.log("success"))
+        .catch((err) => console.log("failed to send message"));
         this.setState({ name: "", email: "", message: "", messageSent: true });
-        console.log("message is being sent!!")
     }
 
 
