@@ -34,6 +34,8 @@ const WorkPane = ({ project }) => {
                 </div>
             </div>
             <p className="work-pane__description" > { project.description } </p>
+            <br/>
+            <p className="work-pane__description" style={{fontSize: "1.3rem"}} > { project.technology && `Technology: ${project.technology}` } </p>
         </>
     )
 }

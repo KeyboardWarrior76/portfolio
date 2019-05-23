@@ -48,7 +48,7 @@ class Navbar extends React.Component {
                             className="navbar__right__link"
                         />
                     </a>
-                    <h2 className="navbar__name" >{ "<Nicholas Ristagno>" }</h2>
+                    <h2 className="navbar__right__name" >{ "<Nicholas Ristagno>" }</h2>
                 </div>
             </nav>
         )
