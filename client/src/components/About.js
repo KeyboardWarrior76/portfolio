@@ -96,7 +96,7 @@ class About extends React.Component {
                             </ul>
                         </div>
 
-                        <div className="skills__section" style={{marginLeft: "35%"}} >
+                        <div className="skills__section skills__section--middle">
                             <h2 className="skills__header">Frontend</h2>
                             <ul>
                                 <li>Javascript, React</li>

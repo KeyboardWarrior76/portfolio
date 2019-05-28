@@ -10,6 +10,8 @@
     transition-duration: 500;
     overflow: hidden;
 
+    @media(max-width: $tab-port) { border: none; }
+
     &__initializing {
         @include pos-absolute-translated;
         top: 25%;
@@ -19,6 +21,10 @@
         font-family: "Debra Light";
         font-size: 5rem;
         letter-spacing: 5px;
+
+        @media(max-width: $phone) {
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -31,6 +37,11 @@
     padding-bottom: 7.5px;
     text-align: right;
     // border-bottom: 10px groove $color-cyan;
+
+    @media(max-width: $tab-port) { 
+        width: 200%;
+        left: -210%;
+    }
 }
 
 .light-cycle {

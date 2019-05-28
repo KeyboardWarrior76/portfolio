@@ -9,6 +9,8 @@
     width: 100vw;
     padding: 0 2.5rem;
 
+    @media(max-width: $tab-port){ display: none }
+
     &__left {
         display: flex;
         justify-content: space-between;

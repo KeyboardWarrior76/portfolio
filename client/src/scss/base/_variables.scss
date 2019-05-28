@@ -1,3 +1,5 @@
+
+///// COLORS /////
 $color-background: #263238;
 $color-off-white: #CFD8DC;
 $color-light-grey: #78909C;
@@ -10,3 +12,7 @@ $monokai-red: #F92672;
 $monokai-purple: #AE81FF;
 $monokai-yellow: #E6DB74;
 
+///// BREAKPOINTS /////
+$tab-land: 75em; // 1200px
+$tab-port: 56.25em; // 900px 
+$phone: 37.5em; // 600px

@@ -31,10 +31,17 @@ class Contact extends React.Component {
                         <ContactForm />
                     </div>
                     
-                    <div className="map__i-live-here">
-                    </div>
+                    <h2 className="salt-lake-city">Salt Lake City, UT</h2>
 
-                    <div className="map-container">
+                    <div style={{height: "100vh", overflow: "hidden"}}>
+                        <iframe 
+                            title="my house"
+                            className="map-container"
+                            src="https://snazzymaps.com/embed/158480" 
+                            width="100%" 
+                            height="100%" 
+                        ></iframe>
+
                     </div>
                 </div>
                 <ScreenChange 

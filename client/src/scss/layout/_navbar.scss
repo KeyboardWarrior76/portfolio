@@ -9,6 +9,12 @@
     height: 5rem;
     width: 100vw;
     padding: 0 5rem;
+    z-index: 1000;
+
+    @media(max-width: $phone) { 
+        padding: 0 2.5rem;
+        min-width: 35rem;
+    }
 
     &__left {
         display: inline-block;
@@ -22,11 +28,18 @@
         &__link {
             height: 2rem;
             margin-right: 2rem;
+
+            @media(max-width: $phone) { 
+                margin-right: 0;
+                margin-left: 2rem;
+            }
         }
 
         &__name {
             font-family: "Debra Light";
             letter-spacing: 3px;
+
+            @media(max-width: $phone) { display: none}
         }
     }
 
