@@ -12,6 +12,10 @@
         height: calc(100vh + 10rem);
         width: 100vw;
         overflow: hidden;
+
+        @media(max-width: $tab-port) {
+            left: 0;
+        }
     }
 
 }
