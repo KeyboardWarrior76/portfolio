@@ -4,6 +4,7 @@ import { UTIL } from "../../terminalUtilities";
 
 ///// FUNCTION /////
 const setEmail = (event) => {
+    if(!event.value) return null;
     const email = event.value;
     state.userEmail = email;
 
@@ -15,6 +16,7 @@ const setEmail = (event) => {
 };
 
 const setName = (event) => {
+    if(!event.value) return null;
     const name = event.value;
     state.userName = name;
 
@@ -26,6 +28,7 @@ const setName = (event) => {
 };
 
 const setMessage = (event) => {
+    if(!event.value) return null;
     const message = event.value;
     state.userMessage = message;
 
