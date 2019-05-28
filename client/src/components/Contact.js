@@ -33,15 +33,12 @@ class Contact extends React.Component {
                     
                     <h2 className="salt-lake-city">Salt Lake City, UT</h2>
 
-                    <div style={{height: "100vh", overflow: "hidden"}}>
+                    <div  className="contact-map__container">
                         <iframe 
                             title="my house"
-                            className="map-container"
-                            src="https://snazzymaps.com/embed/158480" 
-                            width="100%" 
-                            height="100%" 
+                            className="contact-map"
+                            src="https://snazzymaps.com/embed/158480" ßß 
                         ></iframe>
-
                     </div>
                 </div>
                 <ScreenChange 

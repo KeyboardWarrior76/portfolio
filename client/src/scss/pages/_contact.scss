@@ -138,18 +138,9 @@
     position: absolute;
     right: 5rem;
     top: 5rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
     padding: 1rem 3rem;
     border: 1px dotted $color-cyan;
     border-radius: 100px;
-}
-
-.contact-email {
-    position: absolute;
-    right: 5rem;
-    bottom: 5rem;
-    background-color: rgba(0,0,0,0.5);
-    padding: 1rem 3rem;
-    border: 1px dotted $color-cyan;
-    border-radius: 100px;
+    z-index: 1000;
 }

@@ -297,19 +297,11 @@ body {
   position: absolute;
   right: 5rem;
   top: 5rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem 3rem;
   border: 1px dotted #00ffff;
-  border-radius: 100px; }
-
-.contact-email {
-  position: absolute;
-  right: 5rem;
-  bottom: 5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem 3rem;
-  border: 1px dotted #00ffff;
-  border-radius: 100px; }
+  border-radius: 100px;
+  z-index: 1000; }
 
 .about {
   display: flex;
@@ -598,25 +590,18 @@ body {
     .projects .project__selected div {
       border: 1px solid #76FF03; }
 
-@keyframes zoom-in {
-  0% {
-    transform: scale(0);
-    opacity: 0; }
-  80% {
-    transform: scale(0.2);
-    opacity: 1; }
-  100% {
-    transform: scale(1); } }
-
-.map-container {
-  position: absolute;
-  top: -20vh;
-  right: -2.5rem;
+.contact-map {
   height: 140vh;
   width: 100vw;
   border: none;
-  opacity: 0.3;
-  overflow: hidden; }
+  opacity: 0.3; }
+  .contact-map__container {
+    position: absolute;
+    top: -15rem;
+    left: -2.5rem;
+    height: calc(100vh + 10rem);
+    width: 100vw;
+    overflow: hidden; }
 
 .terminal {
   position: absolute;
