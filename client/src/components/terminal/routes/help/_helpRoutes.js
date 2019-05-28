@@ -10,7 +10,7 @@ const help = (event) => {
         ' ',
         `help                                     -----> basic help command. Type me when you need to know something`,
         `clear                                    -----> clears the terminal display`,
-        `ask                                       -----> lists more information myself`,
+        `ask                                       -----> lists more information about myself`,
         ' ',
         '__________SEND_A_MESSAGE__________',
         ' ',
