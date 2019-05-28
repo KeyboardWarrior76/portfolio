@@ -1,5 +1,6 @@
 
 .work {
+    position: relative;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -13,9 +14,18 @@
 .work-pane-container {
     height: 100%;
     width: 40%;
-    min-width: 40rem;
+    min-width: 37.5rem;
     background-color: rgba(0,0,0,0.3);
     border-left: 2px dotted $color-cyan;
+    overflow-y: auto;
+    
+    @media(max-width: $tab-port) {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid $color-cyan;
+        margin-top: 2rem;
+        overflow-y: visible; 
+    }
 
     .select-project-prompt {
         width: 80%;
@@ -29,6 +39,10 @@
         border-bottom: 1px solid $color-cyan;
         border-radius: 5px;
         background-color: rgba($color-cyan, 0.05);
+
+        @media(max-width: $phone) {
+            margin-top: 3rem;
+        }
     }
 }
 
@@ -60,6 +74,7 @@
         font-size: 2.5rem;
         letter-spacing: 2px;
         text-align: center;
+
     }
 
     &__github {
@@ -97,6 +112,10 @@
         font-size: 1.8rem;
         line-height: 2.5rem;
         padding: 0 5rem;
+
+        @media(max-width: $tab-land) {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -107,8 +126,12 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 60%;
-    min-width: 40rem;
+    min-width: 0;
     padding-top: 2.5rem;
+
+    @media(max-width: $tab-port) {
+        width: 100%;       
+    }
 
     .project {
         display: flex;
@@ -118,12 +141,27 @@
         background-color: rgba($color-cyan,0.2);
         height: 18rem;
         width: 18rem;
-        margin: 5.5rem;
+        margin: 5rem;
         border: 2px solid $color-cyan;
         border-radius: 100px;
         overflow: hidden;
         transition-duration: 0.2s;
         cursor: pointer;
+
+        @media(max-width: 93.75em) {
+            height: 12.75rem;
+            width: 12.75rem;
+        }
+
+        @media(max-width: $tab-land) {
+            margin: 4rem;
+        }
+
+        @media(max-width: $phone) {
+            margin: 2.5rem;
+            height: 10rem;
+            width: 10rem;
+        }
         
         &__title {
             @include pos-absolute-center;
@@ -136,6 +174,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             transition-duration: 0.2s;
+
+            @media(max-width: 93.75em) {
+                font-size: 1.5rem;
+            }
         }
         
         &__image-container {

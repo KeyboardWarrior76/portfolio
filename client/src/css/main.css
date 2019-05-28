@@ -180,7 +180,6 @@ body {
     background-color: rgba(0, 255, 255, 0.2); }
 
 .contact {
-  position: relative;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -316,8 +315,8 @@ body {
   position: absolute;
   right: 5rem;
   top: 5rem;
-  background-color: rgba(0, 0, 0, 0.4);
   padding: 1rem 3rem;
+  background-color: rgba(0, 0, 0, 0.4);
   border: 1px dotted #00ffff;
   border-radius: 100px;
   z-index: 1000; }
@@ -462,6 +461,7 @@ body {
   border-radius: 100px; }
 
 .work {
+  position: relative;
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -474,9 +474,17 @@ body {
 .work-pane-container {
   height: 100%;
   width: 40%;
-  min-width: 40rem;
+  min-width: 37.5rem;
   background-color: rgba(0, 0, 0, 0.3);
-  border-left: 2px dotted #00ffff; }
+  border-left: 2px dotted #00ffff;
+  overflow-y: auto; }
+  @media (max-width: 56.25em) {
+    .work-pane-container {
+      width: 100%;
+      border-left: none;
+      border-top: 1px solid #00ffff;
+      margin-top: 2rem;
+      overflow-y: visible; } }
   .work-pane-container .select-project-prompt {
     width: 80%;
     padding: 2rem;
@@ -489,6 +497,9 @@ body {
     border-bottom: 1px solid #00ffff;
     border-radius: 5px;
     background-color: rgba(0, 255, 255, 0.05); }
+    @media (max-width: 37.5em) {
+      .work-pane-container .select-project-prompt {
+        margin-top: 3rem; } }
 
 .work-pane__video-container {
   overflow: hidden; }
@@ -543,6 +554,9 @@ body {
   font-size: 1.8rem;
   line-height: 2.5rem;
   padding: 0 5rem; }
+  @media (max-width: 75em) {
+    .work-pane__description {
+      font-size: 1.5rem; } }
 
 .projects {
   display: flex;
@@ -550,8 +564,11 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   width: 60%;
-  min-width: 40rem;
+  min-width: 0;
   padding-top: 2.5rem; }
+  @media (max-width: 56.25em) {
+    .projects {
+      width: 100%; } }
   .projects .project {
     display: flex;
     justify-content: center;
@@ -560,12 +577,24 @@ body {
     background-color: rgba(0, 255, 255, 0.2);
     height: 18rem;
     width: 18rem;
-    margin: 5.5rem;
+    margin: 5rem;
     border: 2px solid #00ffff;
     border-radius: 100px;
     overflow: hidden;
     transition-duration: 0.2s;
     cursor: pointer; }
+    @media (max-width: 93.75em) {
+      .projects .project {
+        height: 12.75rem;
+        width: 12.75rem; } }
+    @media (max-width: 75em) {
+      .projects .project {
+        margin: 4rem; } }
+    @media (max-width: 37.5em) {
+      .projects .project {
+        margin: 2.5rem;
+        height: 10rem;
+        width: 10rem; } }
     .projects .project__title {
       position: absolute;
       transform: translate(-50%, -50%);
@@ -580,6 +609,9 @@ body {
       overflow: hidden;
       text-overflow: ellipsis;
       transition-duration: 0.2s; }
+      @media (max-width: 93.75em) {
+        .projects .project__title {
+          font-size: 1.5rem; } }
     .projects .project__image-container {
       position: relative;
       height: 85%;
