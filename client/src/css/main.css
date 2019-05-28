@@ -741,17 +741,28 @@ body {
       .screenchange__initializing {
         font-size: 2.5rem; } }
 
+@keyframes slide-right {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(130%); } }
+
 .light-cycle__container {
   position: absolute;
   top: 50%;
   left: -120%;
   width: 110%;
   padding-bottom: 7.5px;
-  text-align: right; }
+  text-align: right;
+  will-change: left;
+  backface-visibility: hidden; }
   @media (max-width: 56.25em) {
     .light-cycle__container {
       width: 200%;
       left: -210%; } }
+
+.slide-right {
+  transform: translateX(150%); }
 
 .light-cycle {
   transform: scale(1.5); }
