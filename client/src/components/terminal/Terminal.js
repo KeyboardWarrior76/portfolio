@@ -14,6 +14,7 @@ class Terminal extends React.Component {
     componentDidMount() {
         initTerminalRoutes(terminal);
         terminalDisplay = this.displayRef.current;
+        terminal.emitEvent("help");
     }
 
     handleSubmit = (event) => {
@@ -43,11 +44,7 @@ class Terminal extends React.Component {
                 <div 
                     className="terminal__display"
                     ref={this.displayRef}
-                >
-                    <p>Terminal Initiated</p>
-                    <p>type "help" for more information</p>
-                </div>
-
+                ></div>
                 <form 
                     className="terminal__input-container"
                     onSubmit={this.handleSubmit}

@@ -668,6 +668,8 @@ body {
   height: calc(45% + 3rem);
   background-color: rgba(0, 0, 0, 0.9);
   border-top: 5px solid rgba(0, 255, 255, 0.8);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   color: #00ffff;
   cursor: text;
   transition: 3sec;
@@ -706,7 +708,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(88%);
+    height: 88%;
     overflow: scroll;
     padding: 0 0 0px 20px;
     font-size: 1.3rem;

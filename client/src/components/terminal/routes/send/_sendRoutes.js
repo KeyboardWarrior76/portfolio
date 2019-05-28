@@ -70,6 +70,7 @@ const sendRoutes = (terminal) => {
     terminal.addListener("send -message", sendMessage);
     terminal.addListener("send message", sendMessage);
     terminal.addListener("send -m", sendMessage);
+    terminal.addListener("send", sendMessage);
 };
 
 export { sendRoutes };
