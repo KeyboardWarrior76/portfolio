@@ -27,7 +27,6 @@ class Meteor extends React.Component {
 
     render() {
         const { left, top, size } = this.props;
-        console.log(this.state.finished)
         if (this.state.finished) return null;
         else if(this.state.clicked) return (
             <div 
