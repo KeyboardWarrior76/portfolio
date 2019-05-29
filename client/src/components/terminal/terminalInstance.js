@@ -7,15 +7,15 @@
 
 const createTerminal = () => {
 
-    const parseEvent = (event) => {
+    const parseInput = (event) => {
         const eventArrItems = event.split(" ");
         let command, argument, value;
-
+        
         if (eventArrItems.length === 1) {
             command = eventArrItems[0];
             argument = null;
             value = null;
-        } else if (eventArrItems.length <= 2) {
+        } else if (eventArrItems.length === 2) {
             command = eventArrItems[0];
             argument = eventArrItems[1];
             value = null;
@@ -25,7 +25,7 @@ const createTerminal = () => {
             argument = eventArrItems[1];
             value = eventArrItems.slice(2).join(" ");
         }
-
+        
         return {
             command,
             argument,
@@ -36,7 +36,6 @@ const createTerminal = () => {
 
 
     const trimValue = (value) => {
-
         if (value.charAt(0) === "'" || value.charAt(0) === "\"" ) {
             value = value.slice(1);
         } 
@@ -45,41 +44,45 @@ const createTerminal = () => {
         } 
         return value;
     };
-    
-    
 
-    class Terminal extends EventTarget {
 
-        emitEvent(event) {
-            let {command, argument, value} = parseEvent(event);
-            let eventObj;
 
-            if(value) value = trimValue(value);
-
-            if(argument) {
-                eventObj = new Event(`${command} ${argument}`);
-            } else {
-                eventObj = new Event(command);
-            }
-            
-            eventObj.command = command;
-            eventObj.argument = argument;
-            eventObj.value = value;
-
-            this.dispatchEvent(eventObj);
+    class Terminal {
+        constructor() {
+            this.callbackHash = {};
+            this.defaultCallback = null;
         }
 
-        addListener(commandAndArgument, ...callbackArr) {
-            this.addEventListener(commandAndArgument, (event) => {
-                callbackArr.forEach((item) => {
-                    item.call(this, event);
+        addListener(event, callback) {
+            const { callbackHash } = this;
+            if(callbackHash[event]) callbackHash[event].push(callback);
+            else callbackHash[event] = [callback];
+        }
+
+        emitEvent(input) {
+            const { callbackHash, defaultCallback } = this;
+            let {command, argument, value} = parseInput(input);
+            const event = argument? `${command} ${argument}` : command;
+            if(value) value = trimValue(value);
+
+            if(callbackHash[event]) {
+                callbackHash[event].forEach((callback) => {
+                    callback({ command, argument, value });
                 });
-            });
-        }      
+            } else if (defaultCallback) {
+                defaultCallback.call({ command, argument, value });
+            } else {
+                return null;
+            }
+        }
+        
+        addDefaultListener(callback) {
+            if(!this.defaultCallback) this.defaultCallback = callback;
+            else console.log("ERROR: Only one default callback can be set in terminal emitter");
+        }
     }
 
-    const terminal = new Terminal();
-    return terminal;
+    return new Terminal();
 };
 
 const terminal = createTerminal();
