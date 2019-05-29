@@ -619,7 +619,8 @@ body {
       border: 1px dotted #00ffff;
       border-radius: 100px;
       overflow: hidden;
-      background-color: rgba(0, 0, 0, 0.9); }
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 10; }
     .projects .project__video-thumbnail {
       position: absolute;
       transform: translate(-50%, -50%);
