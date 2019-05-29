@@ -49,9 +49,6 @@ const createTerminal = () => {
     
 
     class Terminal extends EventTarget {
-        constructor() {
-            super();
-        }
 
         emitEvent(event) {
             let {command, argument, value} = parseEvent(event);
