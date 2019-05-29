@@ -1,4 +1,3 @@
-import { initTerminalRoutes } from "./terminalRoutes";
 
 
 ///// A KEY POINT TO REMEMBER /////
