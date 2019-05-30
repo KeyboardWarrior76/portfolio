@@ -565,6 +565,7 @@ body {
   flex-wrap: wrap;
   width: 60%;
   min-width: 0;
+  height: 100%;
   padding-top: 2.5rem; }
   @media (max-width: 56.25em) {
     .projects {
