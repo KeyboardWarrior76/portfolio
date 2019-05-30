@@ -582,6 +582,7 @@ body {
     border-radius: 100px;
     overflow: hidden;
     transition-duration: 0.2s;
+    backface-visibility: hidden;
     cursor: pointer; }
     @media (max-width: 93.75em) {
       .projects .project {
@@ -612,28 +613,21 @@ body {
       @media (max-width: 93.75em) {
         .projects .project__title {
           font-size: 1.5rem; } }
-    .projects .project__image-container {
-      position: relative;
+      @media (max-width: 37.5em) {
+        .projects .project__title {
+          font-size: 1.25rem; } }
+    .projects .project__video-thumbnail {
+      position: absolute;
       height: 85%;
       width: 85%;
       border: 1px dotted #00ffff;
-      border-radius: 100px;
-      overflow: hidden;
-      background-color: rgba(0, 0, 0, 0.9);
-      z-index: 10; }
-    .projects .project__video-thumbnail {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      height: 200%;
-      width: 200%;
-      border-radius: 100px; }
+      border-radius: inherit;
+      object-fit: cover; }
     .projects .project:hover {
       transform: scale(1.4);
       background-color: rgba(0, 0, 0, 0.3);
       border: 1px dotted #AE81FF; }
-    .projects .project:hover > div {
+    .projects .project:hover > video {
       border-color: #AE81FF;
       border: 1px solid #AE81FF; }
     .projects .project:hover > p {
@@ -642,7 +636,7 @@ body {
       transform: scale(1.4);
       background-color: rgba(0, 0, 0, 0.3);
       border: 1px dotted #76FF03; }
-    .projects .project__selected div {
+    .projects .project__selected video {
       border: 1px solid #76FF03; }
 
 .contact-map {

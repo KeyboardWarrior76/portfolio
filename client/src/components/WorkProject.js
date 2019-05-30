@@ -29,23 +29,21 @@ class WorkProject extends React.Component {
                     : "project"
                 }
                 onClick={() => setCurrentProject(index)}
+                onMouseEnter={this.onMouseEnter}
+                onMouseLeave={this.onMouseLeave}
             >
                 {  currentProject === index
                     ? null
                     : <p className="project__title">{ project.title }</p>
                 }
-                <div 
-                    className="project__image-container" 
-                    onMouseEnter={this.onMouseEnter}
-                    onMouseLeave={this.onMouseLeave} >
                     <video 
                         loop
                         src={require(`../videos/${project.video}`)} 
                         alt="project" 
                         className="project__video-thumbnail"
                         ref={this.vidRef}
+
                     ></video>
-                </div>
             </div>
         )
     }
