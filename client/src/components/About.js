@@ -57,22 +57,37 @@ class About extends React.Component {
     }
 
     glitch = (event, color) => {
+
+        ///// ERASE ANIMATION //////
         anime.timeline()
         .add({
             targets: event.target,
-            // color: color,
             duration: 0,
             scale: 0.01,
             easing: 'easeInOutCirc',
         })
         .add({
             targets: event.target,
-            // color: "#00ffff",
             duration: 500,
             scale: 1,
             easing: 'linear',
             delay: 3000,
         })
+
+        ///// COLOR ANIMATION //////
+        // anime.timeline()
+        // .add({
+        //     targets: event.target,
+        //     color: color,
+        //     duration: 0,
+        //     easing: 'easeInOutCirc',
+        // })
+        // .add({
+        //     targets: event.target,
+        //     color: "#00ffff",
+        //     duration: 2500,
+        //     easing: 'linear',
+        // })
     }
 
     mapGlitch = (text, color) => {
@@ -86,14 +101,18 @@ class About extends React.Component {
             <>
                 <div className="about" ref={this.aboutRef} >
                     <div className="about-me">
-                        <h1 className="about-me__title">{ this.mapGlitch("About Me", "#76FF03")}</h1>
-                        <div className="about-me__contents">
-                            <p>{ this.mapGlitch("Web Developer and University of Utah Coding Bootcamp graduate pursuing a career on the backend. I make web servers with Ruby and Ruby on Rails, and user interfaces with React and ES6 Javascript. With a personal interest in the Python Programming Language and Data Science, scripting languages are my domain.", "#76FF03") }</p>
-                            <br/>
+                        <div>
+                            <h1 className="about-me__title">{ this.mapGlitch("About Me", "#76FF03")}</h1>
+                            <div className="about-me__contents">
+                                <p>{ this.mapGlitch("Web Developer and University of Utah Coding Bootcamp graduate pursuing a career on the backend. I make web servers with Ruby and Ruby on Rails, and user interfaces with React and ES6 Javascript. With a personal interest in the Python Programming Language and Data Science, scripting languages are my domain.", "#76FF03") }</p>
+                                <br/>
+                            </div>
                         </div>
-                        <p className="about-me__terminal-disclaimer">
-                            If you're feeling adventurous, click the keyboard icon at the bottom and follow the directions in the terminal.
-                        </p>
+                        <div className="about-me__terminal-disclaimer__container">
+                            <p className="about-me__terminal-disclaimer">
+                            {this.mapGlitch("If you're feeling adventurous, click the keyboard icon at the bottom and follow the directions in the terminal.", "#76FF03")}
+                            </p>
+                        </div>
                     </div>
                     <div className="skills">
                         {  this.state.meteors }

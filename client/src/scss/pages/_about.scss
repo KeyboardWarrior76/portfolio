@@ -11,8 +11,11 @@
 }
 
 .about-me {
-    position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem 0 2.5rem 0;
     height: 100%;
     min-height: 50rem;
     width: calc(100% / 2.75);
@@ -32,7 +35,7 @@
 
     &__title {
         width: 75%;
-        margin: 13vh auto 1rem auto;
+        margin: 0 auto;
         padding-left: 2rem;
         padding-bottom: 0.5rem;
         font-family: "Debra Light";
@@ -49,10 +52,6 @@
     }
 
     &__terminal-disclaimer {
-        position: absolute;
-        bottom: 2.5rem;
-        left: 2.5rem;
-        width: 90%;
         padding: 0.5rem 1.5rem;
         border-top: 1px solid $color-cyan;
         border-bottom: 1px solid $color-cyan;
@@ -61,18 +60,17 @@
         border-radius: 5px;
         background-color: rgba($color-cyan, 0.05);
         line-height: 2.5rem;
+        z-index: 10000;
 
         @media(max-width: $tab-port) { display: none; }
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: -1rem;
-            left: -0.5rem;
-            height: 100%;
-            width: 100%;
-            height: calc(100% + 2rem);
-            width: calc(100% + 1rem);
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem 0.25rem;
             border-top: 1px solid $color-cyan;
             border-bottom: 1px solid $color-cyan;
             border-left: 1px dotted $color-cyan;
