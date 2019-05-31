@@ -8,6 +8,7 @@
     background-color: rgba(0,0,0,0.5);
     transition-duration: 500;
     overflow: hidden;
+    z-index: 10000;
 
     @media(max-width: $tab-port) { border: none; }
 

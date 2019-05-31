@@ -25,7 +25,6 @@ class Contact extends React.Component {
                 <div 
                     className="contact"
                     ref={this.contactRef}
-                    // style={this.props.loaded? {} : {opacity: "0"}}
                 >
                     <div className="contact-form__container">
                         <ContactForm />
