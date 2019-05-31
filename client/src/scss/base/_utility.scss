@@ -1,8 +1,10 @@
 .u-high {
+    display: inline-block;
     &:hover {
         background-color: rgba(255,255,255, 0.5);
-        // color: $color-electric-green;
-        font-weight: bold;
+        color: $color-electric-green;
+        // font-weight: bold;
+        transform: rotateX(90deg);
     }
 }
 
@@ -26,4 +28,26 @@
 }
 .purple {
     color: $monokai-purple;
+}
+
+@keyframes stretch {
+    0%,100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+        // color: $color-electric-green;
+    }
+}
+
+.glitch {
+    display: inline-block;
+    transition-duration: 0.1s;
+    &:hover {
+        animation: stretch 0.3s ease-in-out 0s infinite;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        // transform: scaleX(2);
+        // color: $color-electric-green;
+    }
 }

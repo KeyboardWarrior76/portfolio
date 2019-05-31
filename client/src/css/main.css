@@ -1,14 +1,17 @@
 @font-face {
-  font-family: "Debra";
-  src: url("../fonts/DebraPW-Bold.otf"); }
+  font-family: "Glitch Outline";
+  src: url("../fonts/glitch-outline.otf"); }
 
 @font-face {
   font-family: "Debra Light";
   src: url("../fonts/DebraPW-Light.otf"); }
 
-.u-high:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  font-weight: bold; }
+.u-high {
+  display: inline-block; }
+  .u-high:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #76FF03;
+    transform: rotateX(90deg); }
 
 .white {
   color: #CFD8DC; }
@@ -30,6 +33,19 @@
 
 .purple {
   color: #AE81FF; }
+
+@keyframes stretch {
+  0%, 100% {
+    transform: scaleX(1); }
+  50% {
+    transform: scale(1.5); } }
+
+.glitch {
+  display: inline-block;
+  transition-duration: 0.1s; }
+  .glitch:hover {
+    animation: stretch 0.3s ease-in-out 0s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode; }
 
 *,
 *::before,

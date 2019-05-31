@@ -56,14 +56,39 @@ class About extends React.Component {
         }
     }
 
+    glitch = (event, color) => {
+        anime.timeline()
+        .add({
+            targets: event.target,
+            // color: color,
+            duration: 0,
+            scale: 0.01,
+            easing: 'easeInOutCirc',
+        })
+        .add({
+            targets: event.target,
+            // color: "#00ffff",
+            duration: 500,
+            scale: 1,
+            easing: 'linear',
+            delay: 3000,
+        })
+    }
+
+    mapGlitch = (text, color) => {
+        return text.split(" ").map((word, index) => {
+            return <span key={index} onMouseLeave={(event) => this.glitch(event, color)} style={{display: "inline-block"}} >{ word }&nbsp;</span>
+        })
+    }
+
     render() {
         return (
             <>
                 <div className="about" ref={this.aboutRef} >
                     <div className="about-me">
-                        <h1 className="about-me__title">About Me</h1>
+                        <h1 className="about-me__title">{ this.mapGlitch("About Me", "#76FF03")}</h1>
                         <div className="about-me__contents">
-                            <p>Web Developer and University of Utah Coding Bootcamp graduate pursuing a career on the backend. I make web servers with Ruby and Ruby on Rails, and user interfaces with React and ES6 Javascript. With a personal interest in the Python Programming Language and Data Science, scripting languages are my domain.</p>
+                            <p>{ this.mapGlitch("Web Developer and University of Utah Coding Bootcamp graduate pursuing a career on the backend. I make web servers with Ruby and Ruby on Rails, and user interfaces with React and ES6 Javascript. With a personal interest in the Python Programming Language and Data Science, scripting languages are my domain.", "#76FF03") }</p>
                             <br/>
                         </div>
                         <p className="about-me__terminal-disclaimer">
@@ -73,24 +98,24 @@ class About extends React.Component {
                     <div className="skills">
                         {  this.state.meteors }
                         <div className="skills__section">
-                            <h2 className="skills__header">Backend</h2>
+                            <h2 className="skills__header"> {this.mapGlitch("Backend", "#76FF03")}</h2>
                             <ul>
-                                <li>Ruby, Ruby on Rails</li>
-                                <li>Node.js, Express</li>
-                                <li>Postgresql, Active Record</li>
-                                <li>MongoDB, Mongoose</li>
-                                <li>Rest APIs</li>
+                                <li>{this.mapGlitch("Ruby, Ruby on Rails", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Node.js, Express", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Postgresql, Active Record", "#76FF03")}</li>
+                                <li>{this.mapGlitch("MongoDB, Mongoose", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Rest APIs", "#76FF03")}</li>
                             </ul>
                         </div>
 
                         <div className="skills__section skills__section--middle">
-                            <h2 className="skills__header">Frontend</h2>
+                            <h2 className="skills__header">{this.mapGlitch("Frontend", "#76FF03")}</h2>
                             <ul>
-                                <li>Javascript, React</li>
-                                <li>SASS & CSS3</li>
-                                <li>Anime.js</li>
-                                <li>Styled Components</li>
-                                <li>Templating Engines</li>
+                                <li>{this.mapGlitch("Javascript, React", "#76FF03")}</li>
+                                <li>{this.mapGlitch("SASS & CSS3", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Anime.js", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Styled Components", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Templating Engines", "#76FF03")}</li>
                             </ul>
                         </div>
 
