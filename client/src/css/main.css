@@ -334,7 +334,8 @@ body {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  opacity: 0; }
+  opacity: 0;
+  overflow-y: auto; }
 
 .about-me {
   position: relative;
@@ -478,7 +479,8 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow-y: auto; }
 
 .work-pane-container {
   height: 100%;
@@ -715,7 +717,7 @@ body {
     left: 0;
     width: 100%;
     height: 88%;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 0 0 0px 20px;
     font-size: 1.3rem;
     color: inherit;
