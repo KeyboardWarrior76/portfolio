@@ -176,6 +176,7 @@ body {
     transition-duration: 0.2s; }
     .bottom-bar .terminal-toggle .terminal-image {
       height: 3.5rem;
+      width: 3.5rem;
       margin-right: 1.5rem; }
     .bottom-bar .terminal-toggle:hover {
       background-color: rgba(0, 255, 255, 0.4); }
@@ -281,7 +282,8 @@ body {
     border-bottom: 1px solid #00ffff;
     font-size: 1.6rem;
     font-family: "Lato";
-    letter-spacing: 1.25px; }
+    letter-spacing: 1.25px;
+    overflow-y: auto; }
     .contact-form textarea::placeholder {
       color: #00ffff; }
   .contact-form button {

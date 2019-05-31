@@ -117,6 +117,7 @@
         font-size: 1.6rem;
         font-family: "Lato";
         letter-spacing: 1.25px;
+        overflow-y: auto;
 
         &::placeholder {
             color: $color-cyan;
