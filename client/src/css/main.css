@@ -478,8 +478,7 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   height: 100%;
-  width: 100%;
-  overflow: scroll; }
+  width: 100%; }
 
 .work-pane-container {
   height: 100%;
