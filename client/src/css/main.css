@@ -334,8 +334,7 @@ body {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  opacity: 0;
-  overflow-y: auto; }
+  opacity: 0; }
 
 .about-me {
   position: relative;
@@ -345,8 +344,7 @@ body {
   width: calc(100% / 2.75);
   min-width: 30rem;
   background-color: rgba(0, 0, 0, 0.3);
-  border-right: 2px dotted #00ffff;
-  overflow-y: auto; }
+  border-right: 2px dotted #00ffff; }
   @media (max-width: 56.25em) {
     .about-me {
       width: 100%;
@@ -387,13 +385,12 @@ body {
       .about-me__terminal-disclaimer {
         display: none; } }
     .about-me__terminal-disclaimer::before {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
       content: "";
       position: absolute;
-      display: block;
+      top: -1rem;
+      left: -0.5rem;
+      height: 100%;
+      width: 100%;
       height: calc(100% + 2rem);
       width: calc(100% + 1rem);
       border-top: 1px solid #00ffff;
