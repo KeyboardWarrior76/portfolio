@@ -120,13 +120,13 @@ class About extends React.Component {
                         </div>
 
                         <div className="skills__section">
-                            <h2 className="skills__header">Skills</h2>
+                            <h2 className="skills__header">{this.mapGlitch("Skills", "#76FF03")}</h2>
                             <ul>
-                                <li>Agile, Scrum, & Kanban</li>
-                                <li>Git & Github</li>
-                                <li>Netlify</li>
-                                <li>Heroku</li>
-                                <li>Cloudinary</li>
+                                <li>{this.mapGlitch("Agile, Scrum, & Kanban", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Git & Github", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Netlify", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Heroku", "#76FF03")}</li>
+                                <li>{this.mapGlitch("Cloudinary", "#76FF03")}</li>
                             </ul>
                         </div>
                     </div>
