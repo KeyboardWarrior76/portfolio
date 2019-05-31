@@ -126,8 +126,6 @@
     align-items: flex-start;
     flex-wrap: wrap;
     width: 60%;
-    min-width: 0;
-    height: 100%;
     padding-top: 2.5rem;
 
     @media(max-width: $tab-port) {
@@ -186,7 +184,7 @@
         }
         
         &__video-thumbnail {
-            position: absolute;
+            @include pos-absolute-center;
             height: 85%;
             width: 85%;
             border: 1px dotted $color-cyan;

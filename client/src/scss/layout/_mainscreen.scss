@@ -1,16 +1,14 @@
 
 .mainscreen {
-    @include pos-absolute-center;
+    position: relative;
     height: calc(100vh - 10rem);
     width: calc(100vw - 5rem);
     border: 1px solid $color-cyan;
     border-radius: 5px;
     background-color: rgba(150,150,150, 0.15);
+    z-index: 100;
 
     @media(max-width: $tab-port) {
-        top: 5rem;
-        left: 0;
-        transform: translate(0,0);
         width: 100%;
         border-left: none;
         border-right: none;
