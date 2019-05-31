@@ -10,7 +10,7 @@ const WorkPane = ({ project }) => {
                     src={require(`../videos/${project.video}`)} 
                     alt="project overview" 
                     className="work-pane__video"
-                    codecs=" H.264/MPEG-4"
+                    codecs="H.264/MPEG-4"
                 ></video>
             </div>
             <div className="work-pane__header">

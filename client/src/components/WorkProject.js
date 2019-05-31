@@ -42,7 +42,7 @@ class WorkProject extends React.Component {
                         alt="project" 
                         className="project__video-thumbnail"
                         ref={this.vidRef}
-                        codecs=" H.264/MPEG-4"
+                        codecs="H.264/MPEG-4"
                     ></video>
             </div>
         )
