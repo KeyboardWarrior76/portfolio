@@ -36,14 +36,16 @@ class WorkProject extends React.Component {
                     ? null
                     : <p className="project__title">{ project.title }</p>
                 }
+                <div className="project__video-container">
                     <video 
                         loop
                         src={require(`../videos/${project.video}`)} 
                         alt="project" 
                         className="project__video-thumbnail"
                         ref={this.vidRef}
-                        codecs="H.264/MPEG-4"
+                        // codecs="H.264/MPEG-4"
                     ></video>
+                </div>
             </div>
         )
     }

@@ -182,14 +182,24 @@
                 font-size: 1.25rem;
             }
         }
-        
-        &__video-thumbnail {
-            @include pos-absolute-center;
+
+        &__video-container {
             height: 85%;
             width: 85%;
             border: 1px dotted $color-cyan;
+            border-radius: 100px;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        &__video-thumbnail {
+            position: relative;
+            transform: scale(2);
+            height: 100%;
+            width: 100%;
             border-radius: inherit;
-            object-fit: cover;
+            object-fit: contain;
+            z-index: -1;
         }
 
         &:hover {
@@ -198,7 +208,7 @@
             border: 1px dotted $monokai-purple;
         }
         
-        &:hover > video {
+        &:hover > div {
             border-color: $monokai-purple;
             border: 1px solid $monokai-purple;
         }
@@ -213,7 +223,7 @@
             border: 1px dotted $color-electric-green;
         }
         
-        &__selected video {
+        &__selected div {
             border: 1px solid $color-electric-green;
         }
     }

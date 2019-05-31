@@ -628,21 +628,26 @@ body {
       @media (max-width: 37.5em) {
         .projects .project__title {
           font-size: 1.25rem; } }
-    .projects .project__video-thumbnail {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
+    .projects .project__video-container {
       height: 85%;
       width: 85%;
       border: 1px dotted #00ffff;
+      border-radius: 100px;
+      overflow: hidden;
+      z-index: 1; }
+    .projects .project__video-thumbnail {
+      position: relative;
+      transform: scale(2);
+      height: 100%;
+      width: 100%;
       border-radius: inherit;
-      object-fit: cover; }
+      object-fit: contain;
+      z-index: -1; }
     .projects .project:hover {
       transform: scale(1.4);
       background-color: rgba(0, 0, 0, 0.3);
       border: 1px dotted #AE81FF; }
-    .projects .project:hover > video {
+    .projects .project:hover > div {
       border-color: #AE81FF;
       border: 1px solid #AE81FF; }
     .projects .project:hover > p {
@@ -651,7 +656,7 @@ body {
       transform: scale(1.4);
       background-color: rgba(0, 0, 0, 0.3);
       border: 1px dotted #76FF03; }
-    .projects .project__selected video {
+    .projects .project__selected div {
       border: 1px solid #76FF03; }
 
 .contact-map {
