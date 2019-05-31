@@ -9,6 +9,7 @@
 html {
     font-size: 62.5%;
 
+    @media(max-height: 55em) { font-size: 50% }
     @media(max-width: $tab-land) { font-size: 56.25% } // 9px (10/16p = 56.25%)
     @media(max-width: $tab-port) { font-size: 50% } // 8px (8/16p = 50%)
     @media(max-width: $phone) { font-size: 43.75% } // 7px (7/16 = 43.75%)

@@ -90,7 +90,6 @@
     align-items: left;
     width: calc(100% - 100% / 2.75);
     height: 100%;
-    // min-height: 51rem;
     min-width: 20rem;
     padding-left: 10rem;
     overflow-y: auto;
@@ -112,6 +111,18 @@
         border: 1px dotted $color-cyan;
         border-radius: 5px;
         padding: 2rem 1rem;
+
+        @media(max-height: 55em) {
+            width: 27.5rem;
+            line-height: 2.75rem;
+            padding: 1.5rem 0.75rem;
+        }
+
+        @media(max-height: 45em) {
+            font-size: 1.6rem;
+            line-height: 2.25rem;
+            width: 22.5rem;
+        }
         
         @media(max-width: $tab-port) {
             position: relative;

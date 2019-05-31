@@ -40,6 +40,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-height: 55em) {
+    html {
+      font-size: 50%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -426,6 +429,16 @@ body {
     border: 1px dotted #00ffff;
     border-radius: 5px;
     padding: 2rem 1rem; }
+    @media (max-height: 55em) {
+      .skills__section {
+        width: 27.5rem;
+        line-height: 2.75rem;
+        padding: 1.5rem 0.75rem; } }
+    @media (max-height: 45em) {
+      .skills__section {
+        font-size: 1.6rem;
+        line-height: 2.25rem;
+        width: 22.5rem; } }
     @media (max-width: 56.25em) {
       .skills__section {
         position: relative;
