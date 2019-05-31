@@ -108,6 +108,9 @@ class About extends React.Component {
                                 <br/>
                             </div>
                         </div>
+
+                        <img src={require("../images/atom.svg")} alt="atom" className="about-me__atom"/>
+
                         <div className="about-me__terminal-disclaimer__container">
                             <p className="about-me__terminal-disclaimer">
                             {this.mapGlitch("If you're feeling adventurous, click the keyboard icon at the bottom and follow the directions in the terminal.", "#76FF03")}

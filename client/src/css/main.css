@@ -360,13 +360,16 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10rem 0 2.5rem 0;
+  padding: 7.5rem 0 2.5rem 0;
   height: 100%;
   min-height: 50rem;
   width: calc(100% / 2.75);
   min-width: 30rem;
   background-color: rgba(0, 0, 0, 0.3);
   border-right: 2px dotted #00ffff; }
+  @media (max-width: 75em) {
+    .about-me {
+      padding-top: 3rem; } }
   @media (max-width: 56.25em) {
     .about-me {
       width: 100%;
@@ -390,7 +393,25 @@ body {
     width: 70%;
     font-size: 1.8rem;
     line-height: 3rem; }
+    @media (max-height: 55em) {
+      .about-me__contents {
+        font-size: 1.6rem;
+        line-height: 2.75rem; } }
+    @media (max-height: 45em) {
+      .about-me__contents {
+        line-height: 2.25rem; } }
+  .about-me__atom {
+    height: 20rem;
+    width: 20rem; }
+    @media (max-height: 55em) {
+      .about-me__atom {
+        height: 15rem;
+        width: 15rem; } }
+    @media (max-width: 56.25em) {
+      .about-me__atom {
+        display: none; } }
   .about-me__terminal-disclaimer {
+    flex-basis: static;
     padding: 0.5rem 1.5rem;
     border-top: 1px solid #00ffff;
     border-bottom: 1px solid #00ffff;
@@ -399,10 +420,12 @@ body {
     border-radius: 5px;
     background-color: rgba(0, 255, 255, 0.05);
     line-height: 2.5rem;
+    text-align: center;
     z-index: 10000; }
-    @media (max-width: 56.25em) {
+    @media (max-height: 55em) {
       .about-me__terminal-disclaimer {
-        display: none; } }
+        font-size: 1.2rem;
+        line-height: 1.5rem; } }
     .about-me__terminal-disclaimer__container {
       display: flex;
       justify-content: center;
@@ -415,6 +438,12 @@ body {
       border-left: 1px dotted #00ffff;
       border-right: 1px dotted #00ffff;
       border-radius: 5px; }
+      @media (max-width: 56.25em) {
+        .about-me__terminal-disclaimer__container {
+          display: none; } }
+      @media (max-height: 45em) {
+        .about-me__terminal-disclaimer__container {
+          display: none; } }
 
 .skills {
   position: relative;
