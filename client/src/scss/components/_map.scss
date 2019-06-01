@@ -1,8 +1,5 @@
 
 .contact-map {
-    position: relative;
-    top: -15rem;
-    left: -2.5rem;
     height: 140vh;
     width: 100vw;
     border: none;
@@ -10,9 +7,9 @@
 
     &__container {
         position: absolute;
-        top: -5rem;
+        top: -15rem;
         left: -2.5rem;
-        height: 100vh;
+        height: calc(100vh + 10rem);
         width: 100vw;
         overflow: hidden;
 

@@ -7,6 +7,7 @@ import { ContactForm } from "./ContactForm";
 class Contact extends React.Component {
 
     contactRef = React.createRef();
+    isEdge = navigator.userAgent.indexOf('Edge') >= 0;
 
     componentDidUpdate(prevProps) {
         if(!prevProps.loaded && this.props.loaded) {
@@ -32,7 +33,13 @@ class Contact extends React.Component {
                     
                     <h2 className="salt-lake-city">Salt Lake City, UT</h2>
 
-                    <div  className="contact-map__container">
+                    <div  
+                        className="contact-map__container" 
+                        style={ this.isEdge
+                            ? { position: "static", height: "100%", width: "100%", }
+                            : null
+                        }
+                    >
                         <iframe 
                             title="my house"
                             className="contact-map"
