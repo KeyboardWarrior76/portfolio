@@ -2,6 +2,7 @@ import React from 'react';
 import { MainScreen } from "./components/MainScreen";
 import { Navbar } from './components/Navbar';
 import { BottomBar } from "./components/BottomBar";
+import { detect } from "detect-browser";
 
 class App extends React.Component {
   state = {
@@ -9,6 +10,12 @@ class App extends React.Component {
     terminalToggled: false,
     screenloaded: false,
   };
+
+  browser = detect();
+
+  componentDidMount() {
+    console.log(this.browser.name);
+  }
 
   componentDidUpdate(prevProps, prevState) {
     if( this.state.selected !== prevState.selected ) {
