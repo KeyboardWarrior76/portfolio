@@ -73,7 +73,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1000;
+        // z-index: 1000;
         overflow: hidden;
 
         @media(max-width: $tab-port) {
@@ -166,7 +166,7 @@
     background-color: rgba(0,0,0,0.4);
     border: 1px dotted $color-cyan;
     border-radius: 100px;
-    z-index: 1000;
+    // z-index: 1000;
 
     @media(max-width: $tab-port) {
         display: none;
