@@ -401,8 +401,10 @@ body {
       .about-me__contents {
         line-height: 2.25rem; } }
   .about-me__atom {
+    display: block;
     height: 20rem;
-    width: 20rem; }
+    width: 20rem;
+    margin: 3rem auto 0 auto; }
     @media (max-height: 55em) {
       .about-me__atom {
         height: 15rem;
