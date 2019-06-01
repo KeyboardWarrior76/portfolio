@@ -732,7 +732,7 @@ body {
   color: #00ffff;
   cursor: text;
   transition: 3sec;
-  z-index: 10000; }
+  z-index: 100000; }
   .terminal__input-container {
     position: absolute;
     bottom: 0;
