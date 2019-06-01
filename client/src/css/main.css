@@ -713,8 +713,8 @@ body {
   opacity: 0.3; }
   .contact-map__container {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -5rem;
+    left: -2.5rem;
     height: 100vh;
     width: 100vw;
     overflow: hidden; }
