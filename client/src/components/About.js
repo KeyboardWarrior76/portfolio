@@ -92,7 +92,7 @@ class About extends React.Component {
 
     mapGlitch = (text, color) => {
         return text.split(" ").map((word, index) => {
-            return <span key={index} onMouseLeave={(event) => this.glitch(event, color)} style={{display: "inline-block"}} >{ word }&nbsp;</span>
+            return <span key={index} onMouseLeave={(event) => this.glitch(event, color)} style={{display: "inline-block", width: "static"}} >{ word }&nbsp;</span>
         })
     }
 
