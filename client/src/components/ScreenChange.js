@@ -6,6 +6,7 @@ class ScreenChange extends React.Component {
 
     changeRef = React.createRef()
     cycleRef = React.createRef()
+    isEdge = navigator.userAgent.indexOf('Edge') >= 0;
 
     componentDidMount() {
 
@@ -32,7 +33,12 @@ class ScreenChange extends React.Component {
             <div 
                 className="screenchange" 
                 ref={this.changeRef} 
-                style={this.props.loaded? {display: "none"} : {display: "block"}}
+                style={this.props.loaded
+                    ? {display: "none"} 
+                    : this.isEdge
+                        ? {display: "block", backgroundColor: "#000000"}
+                        : {display: "block"}
+                }
             >
                 <h2 className="screenchange__initializing" >-_-_ Initializing _-_-</h2>
                 <div className="light-cycle__container" ref={this.cycleRef} >

@@ -9,10 +9,6 @@ class Contact extends React.Component {
     contactRef = React.createRef();
     isEdge = navigator.userAgent.indexOf('Edge') >= 0;
 
-    componentDidMount() {
-        console.log(this.props.loaded)
-    }
-
     componentDidUpdate(prevProps) {
         if(!prevProps.loaded && this.props.loaded) {
             anime({

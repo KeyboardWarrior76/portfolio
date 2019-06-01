@@ -264,6 +264,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
     overflow: hidden; }
     @media (max-width: 56.25em) {
       .contact-form__container {
@@ -338,7 +339,8 @@ body {
   padding: 1rem 3rem;
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px dotted #00ffff;
-  border-radius: 100px; }
+  border-radius: 100px;
+  z-index: 1000; }
   @media (max-width: 56.25em) {
     .salt-lake-city {
       display: none; } }
