@@ -40,6 +40,7 @@ class About extends React.Component {
 
 
     aboutRef = React.createRef();
+    isEdge = navigator.userAgent.indexOf('Edge') >= 0;
 
     componentDidMount() {
         this.setState({ mounted: true });
@@ -111,8 +112,8 @@ class About extends React.Component {
                             <img 
                                 src={require("../images/atom.svg")} 
                                 alt="atom" 
-                                className="about-me__atom"/
-                            >
+                                className={this.isEdge? "about-me__atom rotate" : "about-me__atom"}
+                            />
                         </div>
 
                         <div className="about-me__terminal-disclaimer__container">
