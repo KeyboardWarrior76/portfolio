@@ -17,9 +17,15 @@
     font-size: 5rem;
     color: $color-cyan;
 
+    
     @media(max-width: $phone) {
         font-size: 3.5rem;
     }
+    
+    @media(max-height: 45em) {
+        font-size: 4rem;
+    }
+
 
     &::before {
         position: absolute;
@@ -53,6 +59,10 @@
     border-left: 1px dotted $color-cyan;
     border-right: 1px dotted $color-cyan;
     border-radius: 5px;
+
+    @media(max-height: 45em) {
+        width: 37.5rem;
+    }
 
     @media(max-width: $tab-port) {
         width: 40rem;
@@ -96,6 +106,10 @@
         font-family: "Lato";
         letter-spacing: 1.25px;
 
+        @media(max-height: 45em) {
+            height: 5rem;
+        }
+
         &::placeholder {
             color: $color-cyan;
         }
@@ -119,6 +133,10 @@
         letter-spacing: 1.25px;
         overflow-y: auto;
 
+        @media(max-height: 45em) {
+            height: 20rem;
+        }
+
         &::placeholder {
             color: $color-cyan;
         }
@@ -136,6 +154,10 @@
         letter-spacing: 2px;
         font-size: 2.25rem;
         cursor: pointer;
+
+        @media(max-height: 45em) {
+            height: 5rem;
+        }
 
         &:hover {
             background-color: rgba($color-cyan, 0.8);
