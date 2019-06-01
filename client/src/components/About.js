@@ -43,6 +43,7 @@ class About extends React.Component {
 
     componentDidMount() {
         this.setState({ mounted: true });
+        console.log(this.props.loaded)
     }
 
     componentDidUpdate(prevProps) {
