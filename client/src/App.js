@@ -13,10 +13,6 @@ class App extends React.Component {
 
   browser = detect();
 
-  componentDidMount() {
-    console.log(JSON.stringify(this.browser.name));
-  }
-
   componentDidUpdate(prevProps, prevState) {
     if( this.state.selected !== prevState.selected ) {
       this.setState({ screenloaded: false });
