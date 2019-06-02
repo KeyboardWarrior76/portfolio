@@ -46,7 +46,27 @@ class App extends React.Component {
   render() {
     const { selected, terminalToggled, screenloaded, loadCancelations } = this.state;
 
-    return (
+    if(this.browser.name === "ie") return (
+        <div 
+          style={{
+            height: "100vh",
+            width: "100vw",
+            backgroundColor: "#000000",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: "1000000000000"
+          }} 
+        >
+          <h2>I'm sorry, but Internet Explorer is not yet supported.</h2>
+          <h2>It is recommended that this browser only be used for compatibility purposes with legacy applications.</h2>
+          <img 
+              src={require("../images/atom.svg")} 
+              alt="atom" 
+              className="about-me__atom rotate"
+          />
+        </div>
+    ); else return (
       <div className="App">
         <Navbar 
           selected={selected} 
