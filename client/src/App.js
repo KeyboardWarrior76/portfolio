@@ -14,7 +14,7 @@ class App extends React.Component {
   browser = detect();
 
   componentDidMount() {
-    console.log(this.browser.name);
+    console.log(JSON.stringify(this.browser.name));
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -61,7 +61,7 @@ class App extends React.Component {
           <h2>I'm sorry, but Internet Explorer is not yet supported.</h2>
           <h2>It is recommended that this browser only be used for compatibility purposes with legacy applications.</h2>
           <img 
-              src={require("../images/atom.svg")} 
+              src={require("./images/atom.svg")} 
               alt="atom" 
               className="about-me__atom rotate"
           />
