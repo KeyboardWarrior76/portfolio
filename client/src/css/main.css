@@ -855,5 +855,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
-  background-color: #000000; }
+  z-index: 1000; }
+  .ie-not-supported .inner-div {
+    z-index: 1000;
+    text-align: center; }

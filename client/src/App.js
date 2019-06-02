@@ -48,13 +48,15 @@ class App extends React.Component {
 
     if(this.browser.name === "ie") return (
         <div className="ie-not-supported">
-          <h2>I'm sorry, but Internet Explorer is not yet supported.</h2>
-          <h2>It is recommended that this browser only be used for compatibility purposes with legacy applications.</h2>
-          <img 
-              src={require("./images/atom.svg")} 
-              alt="atom" 
-              className="about-me__atom rotate"
-          />
+          <div className="inner-div">
+            <h2>I'm sorry, but Internet Explorer is not yet supported.</h2>
+            <h2>It is recommended that this browser only be used for compatibility purposes with legacy applications.</h2>
+            <img 
+                src={require("./images/atom.svg")} 
+                alt="atom" 
+                className="about-me__atom rotate"
+            />
+          </div>
         </div>
     ); else return (
       <div className="App">
