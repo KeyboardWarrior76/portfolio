@@ -847,3 +847,13 @@ body {
 
 .light-cycle {
   transform: scale(1.5); }
+
+.ie-not-supported {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: #000000; }
