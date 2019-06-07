@@ -105,7 +105,7 @@ class About extends React.Component {
                         <div>
                             <h1 className="about-me__title">{ this.mapGlitch("About Me", "#76FF03")}</h1>
                             <div className="about-me__contents">
-                                <p>{ this.mapGlitch("Web Developer and University of Utah Certificate Program graduate pursuing a career on the backend. I make web servers with Ruby and Ruby on Rails, and user interfaces with React and ES6 Javascript. With a personal interest in the Python Programming Language and Data Science, scripting languages are my domain.", "#76FF03") }</p>
+                                <p>{ this.mapGlitch("Web Developer passionate about learning new technologies. Focused on making maintainable servers and interactive user interfaces with React and ES6 Javascript. Worked in development teams and operating rooms, and looking to apply my skills to a new career.", "#76FF03") }</p>
                                 <br/>
                             </div>
 
