@@ -14,15 +14,15 @@ class Work extends React.Component {
             title: "Beakr", 
             github: "https://github.com/devpointlabs/beakr",
             live: "https://boxing-toonie-23791.herokuapp.com",
-            description: "Beakr is a Learning Management System, and capstone project for Devpoint Labs, made in a team of five people. I was personally responsible for creating the searchbars, student enrollments, CRUD actions on course-sections, units, and the interfaces to manage their many-many associations. I built the interface and animations for course sections and their dropdowns, and each dashboard was a reusable component of mine. The interface for taking and grading quizzes, along with the entire backend for quizzes, was also my work.",
+            description: "Beakr is a Learning Management System, and capstone project for Devpoint Labs, made in a team of five people. I was personally responsible for creating the searchbars, student enrollments, CRUD actions on course-sections, units, and the interfaces to manage their many-many associations along with the vast majority of features for quizzes. **Login using \"test@test.com\" or \"student@test.com\" and \"password\", and note that Heroku's free tier may put servers to sleep**",
             technology: "Ruby, Ruby on Rails, Active Record, Postgresql, React, Styled Components, Cloudinary, Semantic UI React, Anime.js, Devise Token Auth"
         },
         {
             video: "trollo.mp4", 
             title: "Trollo", 
             github: "https://github.com/3mpirical/trollo",
-            live: null,
-            description: "Trollo is a \"Trello\" Clone with views made entirely from the Embedded Ruby templating engine (ERB), and Sass. The challenge for this project was to make a complex user interface without any Javascript, and to implement state by means of hidden checkboxes and radio buttons.",
+            live: "https://hidden-mountain-13919.herokuapp.com",
+            description: "Trollo is a \"Trello\" Clone with views made entirely from the Embedded Ruby templating engine (ERB), and Sass. The challenge for this project was to make a complex user interface without any Javascript, and to implement state by means of hidden checkboxes and radio buttons. **Login using \"fake@mail.com\" and \"password\", and note that Heroku's free tier may put servers to sleep**",
             technology: "Ruby, Ruby on Rails, Postgresql, Active Record, ERB, Sass, CSS3, Devise",
         },
         {
